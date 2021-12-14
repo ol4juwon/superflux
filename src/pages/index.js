@@ -1,6 +1,7 @@
 import routes from "./routes";
 import { convertRoutesToComponents } from "../helpers";
-import { Routes ,Route} from "react-router";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Routes ,Route} from "react-router";
 import LandingPage from "./general/LandingPage";
 
 const Pages = ()=> {

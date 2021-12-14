@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import React, {useState} from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { HOME } from '../pagesPath';
 import Logo from '../../assets/images/logo2.png';
 import Hamburger from '../../assets/images/Vector.png';
 import { Container, Navbar, NavDropdown ,Nav} from 'react-bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 const GeneralNavBar = () => {
-    const history = useNavigate();
+    const history = useHistory();
     const [show, setShow] = useState(false);
     const toggleNav = () => {
         setShow(!show);

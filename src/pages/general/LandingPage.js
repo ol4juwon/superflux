@@ -3,7 +3,7 @@
 import React from "react";
 import GeneralNavBar from "./NavBar";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 import Background  from '../../assets/images/ezgif.png';
 // import landing from "assets/images/landingPage/bannarImg.png";
@@ -17,7 +17,7 @@ import Background  from '../../assets/images/ezgif.png';
 // import WhatPeopleSay from "./WhatPeopleSay";
 
 const LandingPage = () => {
-  const history = useNavigate();
+  const history = useHistory();
 
 
   return (
