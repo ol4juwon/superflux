@@ -8,7 +8,7 @@ const Solutions = (props) => {
         <Solutions.Wrapper>
             {props.solutions && props.solutions.map(
                 (details, index) => {
-                    return(
+                    return (
                         <Solutionsitem key={index} details={details} />
                     )
                 }
@@ -21,6 +21,9 @@ const Solutions = (props) => {
 
 Solutions.Wrapper = styled.div`
 width: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
 `
 
 export default Solutions;

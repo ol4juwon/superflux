@@ -10,13 +10,35 @@ const Home = () => {
     const solutions = [
         {
             img: SECUREPRINTS,
-            h3: "",
-            p: ""
+            h3: "Secure Prints",
+            p: "We print security docuemnts on secure printers and provide a secure printing service for your business."
         },
         {
             img:HARDCOVER,
+            h3: "Hard Cover",
+            p: "We print hard cover books and provide a secure printing service for your business."
 
         }
+        ,
+        {
+            img:HARDCOVER,
+            h3: "Hard Cover",
+            p: "We print hard cover books and provide a secure printing service for your business."
+
+        }
+        , {
+            img:HARDCOVER,
+            h3: "Hard Cover",
+            p: "We print hard cover books and provide a secure printing service for your business."
+
+        }
+        , {
+            img:HARDCOVER,
+            h3: "Hard Cover",
+            p: "We print hard cover books and provide a secure printing service for your business."
+
+        }
+        
     ]
     return (
         <Home.Wrapper>
@@ -52,9 +74,9 @@ const Home = () => {
                </div>
                <div className='outerBound2'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
                <div className='solutions'>
-                <div><h3> Our Solutions</h3>
+                <div className='Text'><h3> Our Solutions</h3>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
-                <div className='boxes'>
+                <div className='slides'>
                     <Solutions solutions={solutions} />
                 </div>
                </div>
@@ -173,25 +195,27 @@ Home.Wrapper = styled.div`
       
      }
      .solutions{
-         display:flex;
-         grid-template-columns: repeat(6, auto);
-        //  flex-direction: column;
-         width:100%;
-         height:300px;
-         align-items: center;
-         justify-self:center;
-         background: #F4f8fc;
-         h3{
-             padding-top: 40px;
+         height: 300px;
+         width: 100%;
+         background-color: #E5E5E5;
+         border: 1px solid #011166;
+         display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+         .Text{
+             width: 100%;
+             background-color: #E5E5E5;
+             border-bottom: 1px solid #011166;
+             color: blue;
+             h3{
+                 color: #011166;
+             }
          }
-         .boxes{
-             with:100%;
-             display: flex;
-             flex-direction: row;
-             border-bottom: 1px solid red;
-                justify-content: space-between;
-             overflow-x: hidden;
-            
+         .slides{
+             width: 100%;
+             height: 300px;
+             border: 5px solid violet;
          }
      }
      .platform{
