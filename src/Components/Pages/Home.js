@@ -2,9 +2,22 @@ import React from 'react';
 import styled from 'styled-components';
 import OUTERBOUND from '../../assets/images/outerbound.png'
 import  Group1 from '../../assets/images/Rectangle 176.png'
-
+import SECUREPRINTS from '../../assets/images/secureprints.png'
+import HARDCOVER from '../../assets/images/hardcover.png'
 import Group2 from '../../assets/images/Rectangle 177.png'
+import Solutions from '../Solutions';
 const Home = () => {
+    const solutions = [
+        {
+            img: SECUREPRINTS,
+            h3: "",
+            p: ""
+        },
+        {
+            img:HARDCOVER,
+
+        }
+    ]
     return (
         <Home.Wrapper>
 
@@ -30,8 +43,8 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='image'>
-                             <img className='cls1' src={Group1} alt=''/>
-                             <img className='cls2' src={Group2} alt=''/> 
+                             <img className='bottom' src={Group1} alt=''/>
+                             <img className='top' src={Group2} alt=''/> 
                          <div className='cls3'></div>  
                         </div>
                       
@@ -40,12 +53,9 @@ const Home = () => {
                <div className='outerBound2'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
                <div className='solutions'>
                 <div><h3> Our Solutions</h3>
-                <p>lorem ipsum </p></div>
+                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
                 <div className='boxes'>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                    <Solutions solutions={solutions} />
                 </div>
                </div>
                <div className='outerBound3'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
@@ -106,11 +116,11 @@ Home.Wrapper = styled.div`
 }
     .introduction{
         width: 100%;
-        background-color: white;
+        background-color: #E5E5E5;
         height: 700px;
         display: flex;
         flex-direction: row no-wrap;
-        color:blue;
+        color: #011166;
         .text{
             width: 50%;
             padding-left: 100px;
@@ -127,35 +137,35 @@ Home.Wrapper = styled.div`
             height: 500px;
             justify-content: end;
             right:0px;
-            .cls2{
+            .top{
                 position: absolute;
-                bottom:-180px;
-                width:500px;
-                height:450px;
+                bottom:-130px;
+                width:418px;
+                height:338px;
                 img{
                 box-shadow: 0 20px 20px 0 rgb(223,221,123);
                 }
                 right:0;
                 z-index:10;
             }
-            .cls1{
+            .bottom{
                 position: absolute;
-                right: 160px;
-                bottom:20px;
+                right: 126px;
+                bottom:-60px;
                 border-radius:5px;
                 z-index:7;
-                width: 500px;
-                height: 450px;
+                width: 602px;
+                height: 500px;
                 
             }
             .cls3{
                 position: absolute;
-                bottom:28px;
+                bottom:-30px;
                 background: white;
-                right:70px;
+                right:10px;
                 height:230px;
                 border-radius: 5px;
-                width:385px;
+                width:370px;
                 b0x-shadow:  0 30px 50px 0 rgba(28,102,254,0.4);
                 z-index:9;
             }
@@ -164,29 +174,24 @@ Home.Wrapper = styled.div`
      }
      .solutions{
          display:flex;
-         flex-direction: column;
+         grid-template-columns: repeat(6, auto);
+        //  flex-direction: column;
          width:100%;
          height:300px;
          align-items: center;
          justify-self:center;
-         background: blue;
+         background: #F4f8fc;
          h3{
              padding-top: 40px;
          }
          .boxes{
              with:100%;
              display: flex;
-             flex-wrap: nowrap;
+             flex-direction: row;
+             border-bottom: 1px solid red;
+                justify-content: space-between;
              overflow-x: hidden;
-            //  grid-template-columns: repeat(4, auto);
-            //  grid-gap: 100px;
-             div{
-                 flex: 0 0 auto;
-                 width: 600px;
-                 border: 1px solid #fff;
-                 height: 250px;
-                 margin: 100px;
-             }
+            
          }
      }
      .platform{

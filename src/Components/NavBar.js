@@ -10,9 +10,9 @@ const NavBar = () => {
     <div className="Menu">
         <ul className="Menu-list">
            <li><NavLink to={"/"}>Home</NavLink> </li>
-        <li><NavLink to={"/"}>About Us</NavLink></li>
-            <li><NavLink to={"/"}>Our Solutions</NavLink></li>
-            <li><NavLink to={"/"}>Blog/Meida</NavLink></li>
+        <li className="dropDown"><NavLink to={"/"}><button className="dropBtn">About us</button><i className="fa fa-caret-down"></i></NavLink></li>
+            <li className="dropDown"><NavLink to={"/"}><button className="dropBtn">Our Solutions</button><i class="fa fa-caret-down"></i></NavLink></li>
+            <li className="dropDown"><NavLink to={"/"}>Blog/Meida<i class="fa fa-caret-down"></i></NavLink></li>
             <li><NavLink to={"/"}>FAQ</NavLink></li>
             <li><NavLink to={"/"}>Contact</NavLink> </li> 
 
@@ -40,6 +40,9 @@ a {
     color: #fff;
     text-decoration: none;
 }
+i{
+    margin: 0 5px;
+}
 .Menu-list{
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -50,6 +53,20 @@ a {
     justify-content: end;
     padding-right: 100px;
     margin-right: 2rem;
+    .dropDown{
+        float: left;
+        overflow: hidden;
+    }
+    .dropDown .dropBtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        // padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
 }
 `
 
