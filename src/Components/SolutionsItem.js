@@ -17,29 +17,23 @@ const Solutionsitem = (props) => {
 
 Solutionsitem.Wrapper = styled.div`
 width: 500px;
-height: 250px;
-margin: auto 100px;
-padding: 5px;
-z-index: 4;
-box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+float: left;
 display: flex;
-flex-direction: row;
-img{
-    width: 250px;
-    background: #EFEFEF;
-}
+margin-left: 50px;
+text-align: left;
 h3{
-    color: #1A66FE;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: #011166;
 }
 p{
-    color: #1A66FE;
-}
-.images{
-    width: 250px;
-    height: 200px;
-}
-.texts{
-    width: 250px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #011166;
+    margin-left: 20px;
 }
 `
 

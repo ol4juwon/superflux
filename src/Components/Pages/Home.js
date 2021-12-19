@@ -6,6 +6,11 @@ import SECUREPRINTS from '../../assets/images/secureprints.png'
 import HARDCOVER from '../../assets/images/hardcover.png'
 import Group2 from '../../assets/images/Rectangle 177.png'
 import Solutions from '../Solutions';
+import Blog from '../Blog';
+import Choose from '../Choose';
+import Testimonials from '../Testimonials';
+import Accreditation from '../Accreditation';
+
 const Home = () => {
     const solutions = [
         {
@@ -82,9 +87,17 @@ const Home = () => {
                </div>
                <div className='outerBound3'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
                <div className='platform'>
-                <div><h3> Why choose Superflux</h3></div>
-                <div>slides</div>
+               <Choose/>
                </div>
+               <div className='blog' >
+                   <Blog/>
+               </div>
+               <div className="testimonials">
+        <Testimonials />
+               </div>
+               <section className='accred'>
+                    <Accreditation />
+               </section>
         </Home.Wrapper>
     );
 }
@@ -198,7 +211,7 @@ Home.Wrapper = styled.div`
          height: 300px;
          width: 100%;
          background-color: #E5E5E5;
-         border: 1px solid #011166;
+        //  border: 1px solid #011166;
          display: flex;
             flex-direction: column;
             align-items: center;
@@ -206,26 +219,50 @@ Home.Wrapper = styled.div`
          .Text{
              width: 100%;
              background-color: #E5E5E5;
-             border-bottom: 1px solid #011166;
+            //  border-bottom: 1px solid #011166;
              color: blue;
              h3{
                  color: #011166;
              }
          }
          .slides{
-             width: 100%;
-             height: 300px;
-             border: 5px solid violet;
+            width: 80%;
+    height: 446px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
          }
      }
      .platform{
         display:flex;
         flex-direction: column;
         width:100%;
-        height:600px;
+        padding-top: 30px;
+        height:auto;
         align-items: center;
         justify-self:center;
         background: white;
+    }
+    .blog{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background: #f4fbfc;
+        // padding: 0 10px;
+        padding-bottom: 30px;
+    }
+    .testimonials{
+        width: 100%;
+        height: 500px;
+        padding:0 100px;
+        background: #e2e6fc;
+    }
+    .accred{
+        width: 100%;
+        height: 500px;
+        padding:0 100px;
+        background: #e2e6fc;
+
     }
 
 `
