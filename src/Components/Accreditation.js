@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import CIPPON from '../assets/images/superflux/home/Accred/CIPPON.png'
+import ISOLogo from '../assets/images/superflux/home/Accred/ISO.png'
+import CBNLogo from '../assets/images/superflux/home/Accred/cbn.png'
 const Accreditation = () => {
     return (
         <Accreditation.Wrapper>
@@ -8,15 +11,15 @@ const Accreditation = () => {
                             </div>
                     <div className='accred-image'>
                         <div>
-                            <img src={""} alt="CIPPON"/>
+                            <img src={CIPPON} alt="CIPPON"/>
                             <p>Chartered Institute of Professional Printers of Nigeria</p>
                         </div>
                         <div>
-                            <img src={""} alt="ISO"/>
+                            <img src={ISOLogo} alt="ISO"/>
                             <p>Internationa Organization for Standardization</p>
                         </div>
                         <div>
-                            <img src={""} alt="Nigerian Cheque"/>
+                            <img src={CBNLogo} alt="Nigerian Cheque"/>
                             <p>Nigerian Cheque Printers Accreditation scheme</p>
 
                         </div>
@@ -55,9 +58,10 @@ flex-direction: column;
         background: white;
         border-radius: 10px;
          img{
-            width: 100%;
-            height: 100px;
-            border: 1px solid #011166;
+            // width: 50px;
+            height: 50px;
+            // border: 1px solid #011166;
+            margin: 10px;
         }p{
             font-size: 14px;
             margin-bottom: 20px;

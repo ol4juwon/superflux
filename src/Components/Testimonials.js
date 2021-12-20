@@ -1,28 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
 import Testimonialitems from './TestimonialItems';
+import Firstbank from '../assets/images/superflux/home/testimony/Fbn.png';
+import Lifebank from '../assets/images/superflux/home/testimony/lifebank.png';
+import Arm from '../assets/images/superflux/home/testimony/arm.png';
+import LoveLagos from '../assets/images/superflux/home/testimony/lovelagos.png';
+
+
 const Testimonials = () => {
     const testimonies =[ {
-        img : "",
-        imgAlt: "",
+        img : Firstbank,
+        imgAlt: "First bank",
         name: "",
         testimony: "",
     },
     {
-        img : "",
-        imgAlt: "",
+        img : Lifebank,
+        imgAlt: "lifebank",
         name: "",
         testimony: "",
     },
     {
-        img : "",
-        imgAlt: "",
+        img : Arm,
+        imgAlt: "arm",
         name: "",
         testimony: "",
     },
     {
-        img : "",
-        imgAlt: "",
+        img : LoveLagos,
+        imgAlt: "Love Lagos",
         name: "",
         testimony: "",
     },

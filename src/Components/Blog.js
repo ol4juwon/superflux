@@ -1,5 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import blogMan from '../assets/images/superflux/home/why choose/blog man.png'
+import conference from '../assets/images/superflux/home/why choose/conference.png'
+import Image40 from '../assets/images/superflux/home/why choose/image40.png'
+
 const Blog = () => {
     return (
         <Blog.Wrapper>
@@ -11,7 +15,8 @@ const Blog = () => {
                          <div className='blog1'>
                              hi
                              </div>
-                                <div className='blog2'>
+                                <div className='blog2 .bg2'>
+                                    {/* <img src={blogMan} alt='' /> */}
                                     </div>
                                         <div className='blog3'>
                                             </div>
@@ -28,6 +33,7 @@ Blog.Wrapper = styled.div`
 width: 100%;
 height: 80%;
 text-align: center;
+background:;
 .Header{
     width: 100%;
     height: auto;
@@ -53,6 +59,9 @@ h3{
         display: grid;
         grid-template-columns: repeat(6, 2fr);
         grid-gap: 50px;
+        .bg2{
+            background: url(${blogMan})
+        }
         .blog1{
             background: #011166;
             grid-column-start: 1;
@@ -62,21 +71,34 @@ h3{
             border: 1px solid red;
         }
         .blog2{
-            background: #011166;
+            background: url('${blogMan}') no-repeat;
+            // background-size:fit;
+            padding: 0px;
+            background-attachment: cover;
             grid-column-start: 3;
             grid-column-end: 7;
             grid-row-start: 1;
             grid-row-end: 2;
+            // img {
+            //     width: 800px;
+            //     height: 200px;
+            // }
         }
         .blog3{
-            background: #011166;
+            // background: #011166;
+            background: url(${Image40});
+            background-attachment: cover;
             grid-column-start: 3;
             grid-column-end: 5;
             grid-row-start: 2;
             grid-row-end: 3;
+            img{
+
+            }
         }
         .blog4{
-            background: #011166;
+            // background: #011166;
+            background: url(${conference});
             grid-column-start: 5;
             grid-column-end: 7;
             grid-row-start: 2;

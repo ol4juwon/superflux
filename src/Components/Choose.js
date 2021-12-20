@@ -1,42 +1,51 @@
 import React from 'react';
 import styled from 'styled-components';
 import Chooseitems from './ChooseItems';
+import starImg from '../assets/images/superflux/home/why choose/Vectorstar.png'
+import headsetImg from '../assets/images/superflux/home/why choose/Vectorheadphone.png'
+import fastforwdIcon from '../assets/images/superflux/home/why choose/Vectorff.png'
+import handbulbIcon from '../assets/images/superflux/home/why choose/Grouphandbulb.png'
+import bulb from '../assets/images/superflux/home/why choose/Vectorbulb.png'
+import spanner from '../assets/images/superflux/home/why choose/Vectorspanner.png'
+import load from '../assets/images/superflux/home/why choose/Vectorakabaru.png'
+import note from '../assets/images/superflux/home/why choose/Vectornotepad.png'
+import warehouse from  '../assets/images/superflux/home/why choose/Layer 3warehouse.png'
 const Choose = () => {
     const reasons = [
         {
-            logo:"we",
+            logo:starImg,
             text: "We print security docuemnts on secure printers and provide a secure printing service for your business."
         },
         {
-            logo:"wed",
+            logo:headsetImg,
             text: "We print hard cover books and provide a secure printing service for your business."
         },
         {
-            logo: "ola",
+            logo: fastforwdIcon,
             text: "We print hard cover books and provide a secure printing service for your business."
         },
         {
-            logo: "taiwo",
+            logo: handbulbIcon,
             text: "We print hard cover books and provide a secure printing service for your business."
         },
         {
-            logo: "",
+            logo: bulb,
             text: "We print hard cover books and provide a secure printing service for your business."
         },
         {
-            logo:"",
+            logo:spanner,
             text: "We print hard cover books and provide a secure printing service for your business."
         },
         {
-            logo: "",
+            logo: load,
             text: "We print hard cover books and provide a secure printing service for your business."
         },
         {
-            logo: "",
+            logo: note,
             text: "We print hard cover books and provide a secure printing service for your business."
         },
         {
-            logo: "",
+            logo: warehouse,
             text: "We print hard cover books and provide a secure printing service for your business."
         }
     ]

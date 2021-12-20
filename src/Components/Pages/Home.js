@@ -10,7 +10,7 @@ import Blog from '../Blog';
 import Choose from '../Choose';
 import Testimonials from '../Testimonials';
 import Accreditation from '../Accreditation';
-
+import Customers from '../Customers'
 const Home = () => {
     const solutions = [
         {
@@ -99,7 +99,7 @@ const Home = () => {
                     <Accreditation />
                </section>
                <section className='customers'>
-
+                    <Customers />
                </section>
         </Home.Wrapper>
     );
