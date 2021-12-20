@@ -98,6 +98,9 @@ const Home = () => {
                <section className='accred'>
                     <Accreditation />
                </section>
+               <section className='customers'>
+
+               </section>
         </Home.Wrapper>
     );
 }
@@ -253,14 +256,21 @@ Home.Wrapper = styled.div`
     }
     .testimonials{
         width: 100%;
-        height: 500px;
+        height: 400px;
         padding:0 100px;
         background: #e2e6fc;
     }
     .accred{
         width: 100%;
-        height: 500px;
+        height: 300px;
         padding:0 100px;
+        background: #e2e6fc;
+
+    }
+    .customers{
+        width: 100%;
+        height: 397pxs;
+        padding:100px 100px;
         background: #e2e6fc;
 
     }
