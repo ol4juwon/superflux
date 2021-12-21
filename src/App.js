@@ -9,6 +9,8 @@ import Contact from './Components/Pages/Contact';
 import Footer from './Components/Footer';
 import Faq from './Components/Pages/Faq'
 import Blog from "./Components/Pages/Blog"
+import About from "./Components/Pages/About"
+import VariableData from './Components/Pages/VariableData';
 function App() {
   return (
     <App.Wrapper>
@@ -22,7 +24,9 @@ function App() {
             <Route path='/team' exact component={Team} />
             <Route path={'/contact'} exact component={Contact} />
             <Route path={"/Faq"} exact component={Faq}/>
+            <Route path={"/About"} exact component={About} />
              <Route path={"/Blog"} exact component={Blog} />
+             <Route path={"/VariableData"} exact component={VariableData} />
           </Switch>
           <Footer />
           </BrowserRouter>

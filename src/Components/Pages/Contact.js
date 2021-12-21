@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <Contact.Wrapper>
             <section className='content'>
-            <div className='cont-heading' ><h1>Contact Us</h1> </div>
+            <div className='cont-heading' ><h1>Contact <span className='underline'>Us</span></h1> </div>
             <div className='sub-cont'>
                 <div className="contact-deets">
                      <h2>Office Address</h2>
@@ -36,12 +36,12 @@ const Contact = () => {
                             </div>
                         </div>
                         <div className='form-row'>
-                            <div><label htmlFor='message'>Message</label>
-                            <textarea cols={50} rows={6} name='message' />
+                            <div className='inputss'><label htmlFor='message'>Message</label>
+                            <input type={"text"} name='message' />
                             </div>
                         </div>
                         <div>
-                            <input type={"submit"} name="submit" value={"Send message"} />
+                            <button >Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -103,6 +103,13 @@ height: 100vh;
             justify-self:center;
             padding-bottom: 104px;
             .kontact{
+                button{
+                    background: #1A66FE;
+                    height:45px;
+                    padding: 12px 30px;
+                    border-radius:   5px;
+                    color:  white;
+                }
                 height:140%;
                 border-radius: 24px;
                 margin-right: 100px;
@@ -112,6 +119,7 @@ height: 100vh;
                 box-shadow:0px 4px 16px rgba(144, 153, 200, 0.24);
                 input {
                     background:#F4F8FC;
+                    outline: none !important;
                     textarea{
                         width: 100%;
                         resize: none;
@@ -126,6 +134,13 @@ height: 100vh;
                     margin-bottom: 30px;
                     .inputss{
                         display: flex;
+                        outlint: none;
+                        input{
+                            border: 0;
+                            outline: 0;
+                            height: 60px;
+                        }
+                        
                         flex-direction: column ;
                         padding: 0 10px;
                         justify-content: space-between;
