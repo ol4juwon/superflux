@@ -10,12 +10,12 @@ const Contact = () => {
                      <h2>Office Address</h2>
                     <div>
                    
-                    <p>Lagos Office</p>
+                    <h4>Lagos Office</h4>
                     <p>3 Vori Close, Off Acme Road, Off Agindigbi Ikeja, Lagos state.</p>
                     <span>+234 12911816</span>
                     </div>
                     <div>
-                    <p>Abuja Office</p>
+                    <h4>Abuja Office</h4>
                     <p>Suit 1, Yobe Investment House, Plot 1332 Ralph Shodeinde street, Central Business District, Abuja, Nigeria</p>
                     <span>+234 803717 9098</span>
                     </div>
@@ -25,19 +25,19 @@ const Contact = () => {
                 <div className='contact-form'>
                     <form className='kontact'>
                         <div className='form-row'>
-                        <div><label htmlFor='first_name'>First Name</label>
+                        <div className='inputss'><label htmlFor='first_name'>First Name</label>
                         <input type={"text"} name='first_name'/></div>
-                        <div><label htmlFor='last_name'>Last Name</label>
+                        <div className='inputss'><label htmlFor='last_name'>Last Name</label>
                         <input type={"text"} name='lastName'/></div></div>
                         <div className='form-row'>
-                            <div>
+                            <div className='inputss'>
                                 <label htmlFor='email'>Email Address</label>
                                 <input name='email' type="email" />
                             </div>
                         </div>
                         <div className='form-row'>
                             <div><label htmlFor='message'>Message</label>
-                            <textarea cols={10} rows={6} name='message' />
+                            <textarea cols={50} rows={6} name='message' />
                             </div>
                         </div>
                         <div>
@@ -61,6 +61,7 @@ height: 100vh;
     padding: 100px 0;
     .cont-heading{
         text-align: center;
+        margin-bottom: 40px;
 
     }
     .sub-cont{
@@ -74,19 +75,66 @@ height: 100vh;
         }
         .contact-deets{
             margin:50px 0px;
-            border:2px solid  blue;
+            // border:2px solid  blue;
             height:100%;
+            background:#F4F8FC;
+            padding-left: 120px;
+            padding-top : 30px;
+            h2{
+                color:#1A66FE;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                font-size: 24px;
+                font-style: poppins;
+                font-weight: 300;
+           
+            }
+            h4{
+                color:#011166;
+                padding:5px 0;
+            }
+            span{
+                padding-bottom: 10px;
+                color:#011166;
+            }
         }
         .contact-form{
             height: 120%;
-           
             justify-self:center;
             padding-bottom: 104px;
             .kontact{
-                height:130%;
+                height:140%;
                 border-radius: 24px;
                 margin-right: 100px;
-                border:2px solid  red;
+                padding: 50px;
+                // border:2px solid  red;
+               border: 1px solid rgba(1, 17, 102, 0.2);
+                box-shadow:0px 4px 16px rgba(144, 153, 200, 0.24);
+                input {
+                    background:#F4F8FC;
+                    textarea{
+                        width: 100%;
+                        resize: none;
+                        white-space: nowrap;
+                        overflow-x: scroll;
+                    }
+
+                }
+                .form-row{
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: 30px;
+                    .inputss{
+                        display: flex;
+                        flex-direction: column ;
+                        padding: 0 10px;
+                        justify-content: space-between;
+                        label{
+                            padding-bottom:5px;
+
+                        } 
+                    }
+                }
             }
         }
     }
