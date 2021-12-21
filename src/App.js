@@ -1,41 +1,38 @@
 import styled from 'styled-components';
 import React from 'react';
 import NavBar from './Components/NavBar';
-import BACKGROUND from './assets/images/background.png';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Home from './Components/Pages/Home';
+import Team from './Components/Pages/Team';
+import Contact from './Components/Pages/Contact';
+import Footer from './Components/Footer';
+
 function App() {
   return (
     <App.Wrapper>
       <div className='arrow sticky'> </div>
-      <Router>
+      <BrowserRouter>
         <NavBar />
       
         <Switch>
           
-            <Route path='/' component={Home}/>
+            <Route path='/' exact component={Home}/>
+            <Route path='/team' exact component={Team} />
+            <Route path={'/contact'} exact component={Contact} />
              
           </Switch>
-          </Router>
+          <Footer />
+          </BrowserRouter>
          
     </App.Wrapper>
   );
 }
 
 App.Wrapper = styled.div`
-background-image: url(${BACKGROUND}) no-repeat  fixed;
-background-blend-mode: multiply;
+
 width: 100%;
 margin: 0 auto;
-.arrow{
-  background: blue;
-  z-index: 200;
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
+
 `
 export default App;

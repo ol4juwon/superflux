@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import OUTERBOUND from '../../assets/images/outerbound.png'
 import  Group1 from '../../assets/images/Rectangle 176.png'
 import SECUREPRINTS from '../../assets/images/secureprints.png'
+import BACKGROUND from '../../assets/images/background.png';
 import HARDCOVER from '../../assets/images/hardcover.png'
 import Group2 from '../../assets/images/Rectangle 177.png'
 import Solutions from '../Solutions';
@@ -79,7 +80,7 @@ const Home = () => {
                </div>
                <div className='outerBound2'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
                <div className='solutions'>
-                <div className='Text'><h3> Our Solutions</h3>
+                <div className='Text'><h3> Our Soluti<i className='underline'>ons</i></h3>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
                 <div className='slides'>
                     <Solutions solutions={solutions} />
@@ -106,6 +107,19 @@ const Home = () => {
 }
 Home.Wrapper = styled.div`
     display: flex;
+     background:url("../src/assets/images/background.png") rgba(5, 23, 43, 0.6) ; 
+
+background-blend-mode: multiply;
+.arrow{
+    background: blue;
+    z-index: 200;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
     flex-direction: column;
     width: 100%;
     // height: 100vh;
@@ -241,6 +255,7 @@ Home.Wrapper = styled.div`
         flex-direction: column;
         width:100%;
         padding-top: 30px;
+        padding-bottom: 30px;
         height:auto;
         align-items: center;
         justify-self:center;
@@ -257,13 +272,13 @@ Home.Wrapper = styled.div`
     .testimonials{
         width: 100%;
         height: 400px;
-        padding:0 100px;
+        // padding:10px 100px;
         background: #e2e6fc;
     }
     .accred{
         width: 100%;
         height: 300px;
-        padding:0 100px;
+        // padding:0 100px;
         background: #e2e6fc;
 
     }

@@ -13,8 +13,8 @@ const NavBar = () => {
         <li className="dropDown"><NavLink to={"/"}><button className="dropBtn">About us</button><i className="fa fa-caret-down"></i></NavLink></li>
             <li className="dropDown"><NavLink to={"/"}><button className="dropBtn">Our Solutions</button><i class="fa fa-caret-down"></i></NavLink></li>
             <li className="dropDown"><NavLink to={"/"}>Blog/Meida<i class="fa fa-caret-down"></i></NavLink></li>
-            <li><NavLink to={"/"}>FAQ</NavLink></li>
-            <li><NavLink to={"/"}>Contact</NavLink> </li> 
+            <li><NavLink to={"/faq"}>FAQ</NavLink></li>
+            <li><NavLink to={"/contact"}>Contact</NavLink> </li> 
 
         </ul>
     </div>
@@ -25,7 +25,8 @@ const NavBar = () => {
 NavBar.Wrapper = styled.div`
 height: 100px;
 // z-index: 100;
-background: rgb(0,0,0,0.2);
+background-color: transparent;
+background-color: rgba(0, 0, 0, 0.004);
 // padding: 10px;
 width: 100%;
 box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
@@ -37,7 +38,7 @@ align-items: center;
     margin-left: 100px;
 }
 a {
-    color: #fff;
+    color: #011166;
     text-decoration: none;
 }
 i{
@@ -61,7 +62,7 @@ i{
         font-size: 16px;  
         border: none;
         outline: none;
-        color: white;
+        color: #011166;
         // padding: 14px 16px;
         background-color: inherit;
         font-family: inherit;

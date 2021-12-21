@@ -31,6 +31,8 @@ const Accreditation = () => {
 Accreditation.Wrapper = styled.div`
 width: 100%;
 height: 100%;
+// margin: 100px;
+background: white;
 display: flex;
 flex-direction: column;
 .accred-text{
@@ -47,9 +49,11 @@ flex-direction: column;
     }
 }
 .accred-image{
+    width:80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+    margin: 0 auto;
     div{
 
        color: #011166;
@@ -57,6 +61,9 @@ flex-direction: column;
         height: 150px;
         background: white;
         border-radius: 10px;
+        padding: 0 100px;
+        border: 1px solid rgba(1, 17, 102, 0.2);
+        box-shadow: 8px 4px 16px rgba(144,153,200, 0.24);
          img{
             // width: 50px;
             height: 50px;

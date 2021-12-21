@@ -32,12 +32,7 @@ const Testimonials = () => {
         name: "",
         testimony: "",
     },
-    {
-        img : "",
-        imgAlt: "",
-        name: "",
-        testimony: "",
-    }
+  
 
 
 ]
@@ -46,20 +41,25 @@ const Testimonials = () => {
             <div className='hrader'>
                 <h1>Testimonials</h1>
             </div>
-            <div className='testimony'>
+            <div className='tes5timony'>
                 {   testimonies.map((testimony, index) => {
                     return <Testimonialitems key={index} testimony={testimony} />
                 })
 
                 }                
             </div>
+            <div className='dotts'>
+
+            </div>
         </Testimonials.Wrapper>
     );
 }
 Testimonials.Wrapper = styled.div`
 height: 100%;
+bsckground: #E2E6FC;
 width: 100%;
-padding-top: 50px;
+border: 1px solid red;
+// padding-bottom: 50px;
 display: flex;
 flex-direction: column;
 .hrader{
@@ -72,9 +72,18 @@ flex-direction: column;
         text-align: center;
     }
 }
-.testimony{
+.tes5timony{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10px auto;
+    // margin-bottom: 19px;
+    // background: green;
+    // grid-gap: 10px;
+    // padding-bottom: 50px;
+}
+.dotts{
+    height: 100px;
+    // background: yellow;
 }
 `
 export default Testimonials;

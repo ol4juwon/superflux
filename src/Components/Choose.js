@@ -53,7 +53,7 @@ const Choose = () => {
         <Choose.Wrapper>
             <div className='Header'>
                 <h1>
-                    Why Choose Us</h1>
+                    Why Choose Superf<span className='underline'>lux</span></h1>
                 <p>
                     Your one-stop security, commercial and variable data print shop.
                 </p>
