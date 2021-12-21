@@ -10,9 +10,9 @@ const NavBar = () => {
     <div className="Menu">
         <ul className="Menu-list">
            <li><NavLink to={"/"}>Home</NavLink> </li>
-        <li className="dropDown"><NavLink to={"/"}><button className="dropBtn">About us</button><i className="fa fa-caret-down"></i></NavLink></li>
-            <li className="dropDown"><NavLink to={"/"}><button className="dropBtn">Our Solutions</button><i class="fa fa-caret-down"></i></NavLink></li>
-            <li className="dropDown"><NavLink to={"/"}>Blog/Meida<i class="fa fa-caret-down"></i></NavLink></li>
+        <li className="dropDown"><NavLink to={"/About"}><button className="dropBtn">About us</button><i className="fa fa-caret-down"></i></NavLink></li>
+            <li className="dropDown"><NavLink to={"/Solutions"}><button className="dropBtn">Our Solutions</button><i class="fa fa-caret-down"></i></NavLink></li>
+            <li className="dropDown"><NavLink to={"/Blog"}>Blog/Meida<i class="fa fa-caret-down"></i></NavLink></li>
             <li><NavLink to={"/faq"}>FAQ</NavLink></li>
             <li><NavLink to={"/contact"}>Contact</NavLink> </li> 
 
