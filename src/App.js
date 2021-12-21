@@ -7,7 +7,8 @@ import Home from './Components/Pages/Home';
 import Team from './Components/Pages/Team';
 import Contact from './Components/Pages/Contact';
 import Footer from './Components/Footer';
-
+import Faq from './Components/Faq'
+import Blog from "./Components/Blog"
 function App() {
   return (
     <App.Wrapper>
@@ -20,7 +21,8 @@ function App() {
             <Route path='/' exact component={Home}/>
             <Route path='/team' exact component={Team} />
             <Route path={'/contact'} exact component={Contact} />
-             
+            <Route path={"/Faq"} exact component={Faq}/>
+             <Route path={"/Blog"} exact component={Blog} />
           </Switch>
           <Footer />
           </BrowserRouter>
