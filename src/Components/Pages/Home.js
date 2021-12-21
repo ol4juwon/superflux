@@ -51,7 +51,7 @@ const Home = () => {
 
            <div className='cta'>
                <h1>
-                   Leading Security & Commercial Print Company
+                   Leading Security &amp; Commercial Print Company
                </h1>
                <p>
                    Your one-stop security, commercial and variable data print shop.
@@ -65,7 +65,7 @@ const Home = () => {
             <div className='introduction'>
                  
                        <div className='text'>
-                            <h1>Superflux International <br/>Limited</h1>
+                            <h1>Superflux International <br/>Limi<span className="underline">ted</span></h1>
                             <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
                             </p>
@@ -80,7 +80,7 @@ const Home = () => {
                </div>
                <div className='outerBound2'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
                <div className='solutions'>
-                <div className='Text'><h3> Our Soluti<i className='underline'>ons</i></h3>
+                <div className='Text'><h3> Our Soluti<span className='underline'>ons</span></h3>
                 <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
                 <div className='slides'>
                     <Solutions solutions={solutions} />
@@ -240,6 +240,18 @@ background-blend-mode: multiply;
              color: blue;
              h3{
                  color: #011166;
+                 font-size:40px;
+                 font-weight:600;
+                 font-style: normal;
+                 line-height: 56px;
+                 font-family: Poppins;
+             }
+             p{
+                 text-align: center;
+                 font-size: 14px;
+                 font-weight: 300;
+                 font-style: normal;
+                 line-height: 22px;
              }
          }
          .slides{

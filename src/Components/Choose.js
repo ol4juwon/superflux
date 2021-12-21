@@ -94,6 +94,15 @@ color:black;
     text-align:center;
     margin-bottom:2rem;
     color:black;
+    h1{
+        font-size: 40px;
+        font-style: normal;
+        font-weight:600;
+    }
+    p{
+        font-size: 14px;
+        color: #011166;
+    }
 }
 `
 export default Choose;

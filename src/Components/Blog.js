@@ -8,7 +8,7 @@ const Blog = () => {
     return (
         <Blog.Wrapper>
             <div className='Header'>
-                <h3>Superflux Blog</h3>
+                <h3>Superflux B<span className="underline">log</span></h3>
                 </div>
                <div className='content'>
                      <div className='Blog'>
@@ -39,8 +39,10 @@ background:;
     height: auto;
 h3{
     padding-top: 40px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: Poppins;
+    line-height: 56px;
     margin-bottom: 20px;
     align-self: center;
     color: #011166;
