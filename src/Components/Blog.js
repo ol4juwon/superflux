@@ -3,7 +3,7 @@ import styled from "styled-components";
 import blogMan from "../assets/images/superflux/home/why choose/blog man.png";
 import conference from "../assets/images/superflux/home/why choose/conference.png";
 import Image40 from "../assets/images/superflux/home/why choose/image40.png";
-
+import newsImg from "../assets/images/superflux/home/testimony/blog1.png"
 const Blog = () => {
   return (
     <Blog.Wrapper>
@@ -14,7 +14,7 @@ const Blog = () => {
       </div>
       <div className="content">
         <div className="Blog">
-          <div className="blog1">hi</div>
+          <div className="blog1 .bg1">hi</div>
           <div className="blog2 .bg2">{/* <img src={blogMan} alt='' /> */}</div>
           <div className="blog3"></div>
           <div className="blog4"></div>
@@ -61,13 +61,20 @@ Blog.Wrapper = styled.div`
         background: url(${blogMan}) #011166;
         mix-blend-mode: multiply;
       }
+      .bg1{
+        background: url(${newsImg}) #011166;
+        mix-blend-mode: multiply;
+      }
       .blog1 {
-        background: #011166;
+        // background: #011166;
+        background: url(${newsImg}) no-repeat;
+        background-attachment: cover;
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 3;
-        border: 1px solid red;
+        padding:0;
+        // border: 1px solid red;
       }
       .blog2 {
         background: url("${blogMan}") no-repeat;
