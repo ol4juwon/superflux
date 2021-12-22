@@ -324,7 +324,7 @@ background-blend-mode: multiply;
     .customers{
         width: 100%;
         height: 397pxs;
-        padding:100px 100px;
+        padding:30px 100px;
         background: #e2e6fc;
 
     }

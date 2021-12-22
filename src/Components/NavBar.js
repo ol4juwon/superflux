@@ -17,17 +17,17 @@ const NavBar = () => {
         </li>
             <li >Our Solutions<i class="fa fa-caret-down"></i>
             <ul>
-            <li><NavLink to="SecurePrints">Secure Prints</NavLink></li>
-            <li><NavLink to="CommercialPrints">Commercial Print</NavLink></li>
+            <li><NavLink to="/SecurePrints">Secure Prints</NavLink></li>
+            <li><NavLink to="/CommercialPrints">Commercial Print</NavLink></li>
                 <li><NavLink to="/variabledata">Variable Data Print</NavLink></li>
-                <li><NavLink to="BrandProtection">Brand Protection</NavLink></li>
-                <li><NavLink to="Envelope">Envelope Production</NavLink></li>
-                <li><NavLink to="Thermal">Thermal/POS roll Production</NavLink></li>
+                <li><NavLink to="/BrandProtection">Brand Protection</NavLink></li>
+                <li><NavLink to="/Envelope">Envelope Production</NavLink></li>
+                <li><NavLink to="/Thermal">Thermal/POS roll Production</NavLink></li>
       <li><NavLink to="#">Link 3</NavLink></li></ul></li>
             <li><NavLink to={"/Blog"}>Blog/Media<i class="fa fa-caret-down"></i></NavLink>
             <ul>
-                <li><NavLink to="News">News/Articles</NavLink></li>
-      <li><NavLink to="Gallery">Gallery</NavLink></li></ul></li>
+                <li><NavLink to="/News">News/Articles</NavLink></li>
+      <li><NavLink to="/Gallery">Gallery</NavLink></li></ul></li>
             <li><NavLink to={"/faq"}>FAQ</NavLink></li>
             <li><NavLink to={"/contact"}>Contact</NavLink> </li> 
 
@@ -84,6 +84,9 @@ i{
         
       li a {
         color: #011166;
+      }
+      li a:hover {
+          color: white;
       }
       
       li:hover {

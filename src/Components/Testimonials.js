@@ -11,26 +11,31 @@ const Testimonials = () => {
     const testimonies =[ {
         img : Firstbank,
         imgAlt: "First bank",
-        name: "",
-        testimony: "",
+        name: "Kehinde Adelowo",
+        position: "Head of Cheque Processing Management,First Bank of Nigeria",
+        testimony: "The service delivery is excellent." 
+        +"The proven track record of compliance to regulatory standard is fantastic. Years of experience in the printing industry coupled with quality & efficiency of the staff is highly commendable.",
     },
     {
         img : Lifebank,
         imgAlt: "lifebank",
-        name: "",
-        testimony: "",
+        name: "Bukola Ogunfayo",
+        position: "MD/CEO, Life Bank",
+        testimony: "We've been able to scale the production of our offers from 30 generic offers to about 110 tailored offers though Superflux",
     },
     {
         img : Arm,
         imgAlt: "arm",
-        name: "",
-        testimony: "",
+        name: "Ada Ebeano",
+        position: "MD, ARM Pensions",
+        testimony: "We've been able to scale the production of our offers from 30 generic offers to about 110 tailored offers though Superflux",
     },
     {
         img : LoveLagos,
         imgAlt: "Love Lagos",
-        name: "",
-        testimony: "",
+        name: "Muktar Musa",
+        position: "CEO,  Love Lagos",
+        testimony: "We've been able to scale the production of our offers from 30 generic offers to about 110 tailored offers though Superflux",
     },
   
 
@@ -56,16 +61,18 @@ const Testimonials = () => {
 }
 Testimonials.Wrapper = styled.div`
 height: 100%;
-bsckground: #E2E6FC;
+background: #E2E6FC;
 width: 100%;
-border: 1px solid red;
-// padding-bottom: 50px;
+padding-bottom: 50px;
 display: flex;
 flex-direction: column;
 .hrader{
     width: 100%;
+   display:flex;
     height: auto;
     h1{
+        width: 100%;
+       margin: 30px auto;
         font-size: 40px;
         font-weight: bold;
         color: #011166;
@@ -75,14 +82,18 @@ flex-direction: column;
 .tes5timony{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: auto;
+    height:auto;
+    box-sizing: border-box;
     margin: 10px auto;
+
     // margin-bottom: 19px;
     // background: green;
     // grid-gap: 10px;
     // padding-bottom: 50px;
 }
 .dotts{
-    height: 100px;
+    // height: 100px;
     // background: yellow;
 }
 `

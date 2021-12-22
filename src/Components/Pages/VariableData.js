@@ -51,7 +51,7 @@ flex-direction: column;
         display:flex;
         padding: 60px 0;
         flex-direction: row;
-        border: 2px solid green;
+        // border: 2px solid green;
         .img{ 
             display: flex;
             justify-content: right;

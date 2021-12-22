@@ -11,6 +11,13 @@ import Faq from './Components/Pages/Faq'
 import Blog from "./Components/Pages/Blog"
 import About from "./Components/Pages/About"
 import VariableData from './Components/Pages/VariableData';
+import Thermal from './Components/Pages/Thermal';
+import Brands from './Components/Pages/Brands';
+import SecurePrints from './Components/Pages/SecurePrints';
+import News from './Components/Pages/News';
+import Commercial from './Components/Pages/Commercial';
+
+import Envelope from './Components/Pages/Envelope';
 function App() {
   return (
     <App.Wrapper>
@@ -27,6 +34,11 @@ function App() {
             <Route path={"/About"} exact component={About} />
              <Route path={"/Blog"} exact component={Blog} />
              <Route path={"/VariableData"} exact component={VariableData} />
+             <Route path={"/Envelope"} exact component={Envelope} />
+             <Route path={"/Thermal"} exact component={Thermal} />
+             <Route path={"/Brands"} exact component={Brands} />
+             <Route path={"/Secureprints"} exact component={SecurePrints } />
+             <Route path={"/news"} exact component={News} />
           </Switch>
           <Footer />
           </BrowserRouter>
