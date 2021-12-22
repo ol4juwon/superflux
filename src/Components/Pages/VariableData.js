@@ -14,27 +14,27 @@ const VariableData = () => {
                     <div className='vcontent'>
                     <p>We print variable information on documents which makes it personal to the individual. We also personalize transactional documents such as bills, statements, vouchers, share certificates, 
                     targeted direct mail pieces and direct marketing. Our products include:
-                    </p>
                     <ul>
                         <li>Statements (RSA, Account Statement etc.) </li>
                         <li>Bills (Land Use Charge)</li>
                         <li>E- Advice Slip</li>
                         <li>Share Certificate</li>
                     </ul>
+                    </p>
+                   
                     </div>
                 </div>
         </VariableData.Wrapper> )
 }
 
 VariableData.Wrapper = styled.div`
-height: 600px;
+// height: 600px;
 width: 100%;
 display: flex;
 flex-direction: column;
     .variable--heading{
         width: 100%;
         padding: 60px 150px;
-        border: 2px solid red;
         text-align: left;
         h1{
             color: #011166;
@@ -49,26 +49,35 @@ flex-direction: column;
         width: 100%;
         height:100%;
         display:flex;
+        padding: 60px 0;
         flex-direction: row;
         border: 2px solid green;
         .img{ 
             display: flex;
-            justify-itens: right;
+            justify-content: right;
             width: 50%;
             height: 100%;
-            border: 2px solid red;
             // padding-right: 50px;
             img{
-            height: 200px;
-            justify-self: right;
+                border-radius: 20px;
+                padding-right: 10px;
+            height: 372px;}
+            // justify-self: right;
         }
         .vcontent{
             width:50%;
             height:100%;
-            border: 2px solid red;
-            padding: 30px;
+            // padding: 30px;
             p{
-                padding: 10px;
+                padding-left: 10px;
+                padding-right: 100px;
+                font-size:16px;
+                font-weight: 300;
+                line-height:30px;
+                color: #011166;
+                ul{
+                    padding-left: 20px; 
+                }
             }
         }
     }

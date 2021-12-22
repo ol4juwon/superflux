@@ -54,9 +54,7 @@ const Choose = () => {
             <div className='Header'>
                 <h1>
                     Why Choose Superf<span className='underline'>lux</span></h1>
-                <p>
-                    Your one-stop security, commercial and variable data print shop.
-                </p>
+               
                     
             </div>
             <div className='content'>
@@ -92,12 +90,13 @@ color:black;
 }
 .Header{
     text-align:center;
-    margin-bottom:2rem;
+    margin-bottom:3rem;
     color:black;
     h1{
         font-size: 40px;
         font-style: normal;
         font-weight:600;
+        margin-bottom: 2rem;
     }
     p{
         font-size: 14px;

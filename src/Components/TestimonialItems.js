@@ -4,9 +4,11 @@ const Testimonialitems = (props) => {
     console.log("",props.testimony)
     return (
         <Testimonialitems.Wrapper>
-            <div className='imgur'>
-                <img src={props.testimony.img} alt='' />
+            <div className='card--img'>
+            <img src={props.testimony.img} alt='' />
+      
             </div>
+                
             <div className="testimone">
 
             </div>
@@ -14,29 +16,18 @@ const Testimonialitems = (props) => {
     );
 }
 Testimonialitems.Wrapper = styled.div`
-width: 60%;
-height:400px;
-margin: 0 40px;
-// background-color: #fff;
-// margin-bottom: 50px;
-display: flex;
-flex-direction: column;
-.imgur{
-    width: 180px;
-    height:145px; 
-   justify-self: center;
-    img{
-        width: 100%;
-        height: auto;
-        
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 200px;
+    .card--img{
+        width:200px;
+        height: 400px;
+        align-content:center;
+        img{
+            width: 100%;
+            // justify-content:center;
+            // height: 200px;
+        }
     }
-    
-}
-.testimone{
-    width: 100%;
-    height: 200px;
-    background: red;
-}
-
 `
 export default Testimonialitems;

@@ -40,6 +40,8 @@ const Footer = () => {
 Footer.Wrapper = styled.div`
 width: 100%;
 height: auto;
+// position: relative;
+bottom:0;
 underline{
     text-decoration: underline;
     text-decoration-thickness: 3px;

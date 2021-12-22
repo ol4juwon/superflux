@@ -51,10 +51,10 @@ const Home = () => {
 
            <div className='cta'>
                <h1>
-                   Leading Security &amp; Commercial Print Company
+                   Leading <span className='Loop'>Security &amp; <br />Commercial </span>Print Company
                </h1>
                <p>
-                   Your one-stop security, commercial and variable data print shop.
+               Your one-stop security, commercial and variable<br/>data print shop.
                </p>
                <button className='rMore'>
                    Read More
@@ -66,8 +66,9 @@ const Home = () => {
                  
                        <div className='text'>
                             <h1>Superflux International <br/>Limi<span className="underline">ted</span></h1>
-                            <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+                            <p>Superflux International Limited is the leading secure, commercial and variable data prints solution provider to over 135 clients in various sectors.
+<br />Our goal is to always exceed customers’ expectations by providing premium quality products and services following international best practices and stringent security controls. We provide a wide array of specialized print services for discerning and quality-conscious clientele base and has continued to enjoy great commendation and patronage from our customers.
+<br />Our operations and activities are guided by the principles of quality, integrity, dependability, confidentiality, teamwork and high ethical standard.
                             </p>
                         </div>
                         <div className='image'>
@@ -81,7 +82,8 @@ const Home = () => {
                <div className='outerBound2'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
                <div className='solutions'>
                 <div className='Text'><h3> Our Soluti<span className='underline'>ons</span></h3>
-                <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </p></div>
+                <p>Get access to the best brand protection technology <br/>
+for your products, variable printing as well as other commercial <br />print solutions. </p></div>
                 <div className='slides'>
                     <Solutions solutions={solutions} />
                 </div>
@@ -107,9 +109,17 @@ const Home = () => {
 }
 Home.Wrapper = styled.div`
     display: flex;
-     background:url("../src/assets/images/background.png") rgba(5, 23, 43, 0.6) ; 
-
+     background:url(${BACKGROUND}) rgba(5, 23, 43, 0.6) ; 
+// positio¿n: absolute;
 background-blend-mode: multiply;
+.Loop{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 700;
+    color:#1A66FE;
+    font-size: 40px;
+    line-height: 54px;
+}
 .arrow{
     background: blue;
     z-index: 200;
@@ -131,12 +141,22 @@ background-blend-mode: multiply;
         height:600px;
         padding-top: 200px;
         padding-left: 100px;
+        p{
+            line-height: 26px;
+            font-size: 16px;
+            padding: 20px 0;
+        }
         .rMore{
         background-color: #1A66FE;
         width: 135px;
         height: 45px;
         color: #fff;
         border-radius: 4px;
+        
+        button{
+            border: none;
+            outline: none !important;
+        }
         }
     }
   .outerBound{
@@ -182,6 +202,11 @@ background-blend-mode: multiply;
                 font-weight: bold;
                 margin-bottom: 1rem;
             }
+            p{
+                font-style: normal;
+                font-size: 14px;
+                line-height: 28px;
+            }
         }
         .image{
             position:absolute;
@@ -225,9 +250,10 @@ background-blend-mode: multiply;
       
      }
      .solutions{
-         height: 300px;
+         height: 320px;
          width: 100%;
          background-color: #E5E5E5;
+         padding-bottom: 50px;
         //  border: 1px solid #011166;
          display: flex;
             flex-direction: column;
@@ -240,26 +266,27 @@ background-blend-mode: multiply;
              color: blue;
              h3{
                  color: #011166;
-                 font-size:40px;
+                 font-size:20px;
                  font-weight:600;
                  font-style: normal;
-                 line-height: 56px;
+                 line-height: 30px;
                  font-family: Poppins;
              }
              p{
                  text-align: center;
-                 font-size: 14px;
+                 font-size: 16px;
                  font-weight: 300;
                  font-style: normal;
-                 line-height: 22px;
+                 line-height: 30px;
+                 padding: 10px;
              }
          }
          .slides{
             width: 80%;
-    height: 446px;
-    position: relative;
-    text-align: center;
-    overflow: hidden;
+            height: 446px;
+             position: relative;
+            text-align: center;
+            overflow: hidden;
          }
      }
      .platform{

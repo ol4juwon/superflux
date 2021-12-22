@@ -1,4 +1,4 @@
-import Logo from "../assets/images/Logo.png"
+import Logo from "../assets/images/Group 53.png"
 import styled from 'styled-components';
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
@@ -8,11 +8,26 @@ const NavBar = () => {
 <img src={Logo} alt='' />
             </div>
     <div className="Menu">
-        <ul className="Menu-list">
+        <ul >
            <li><NavLink to={"/"}>Home</NavLink> </li>
-        <li className="dropDown"><NavLink to={"/About"}><button className="dropBtn">About us</button><i className="fa fa-caret-down"></i></NavLink></li>
-            <li className="dropDown"><NavLink to={"/Solutions"}><button className="dropBtn">Our Solutions</button><i class="fa fa-caret-down"></i></NavLink></li>
-            <li className="dropDown"><NavLink to={"/Blog"}>Blog/Meida<i class="fa fa-caret-down"></i></NavLink></li>
+        <li >About us<i className="fa fa-caret-down"></i>
+        <ul>
+                <li><NavLink to="/About">The Company</NavLink></li>
+      <li><NavLink to="/team">The Team</NavLink></li></ul>
+        </li>
+            <li >Our Solutions<i class="fa fa-caret-down"></i>
+            <ul>
+            <li><NavLink to="SecurePrints">Secure Prints</NavLink></li>
+            <li><NavLink to="CommercialPrints">Commercial Print</NavLink></li>
+                <li><NavLink to="/variabledata">Variable Data Print</NavLink></li>
+                <li><NavLink to="BrandProtection">Brand Protection</NavLink></li>
+                <li><NavLink to="Envelope">Envelope Production</NavLink></li>
+                <li><NavLink to="Thermal">Thermal/POS roll Production</NavLink></li>
+      <li><NavLink to="#">Link 3</NavLink></li></ul></li>
+            <li><NavLink to={"/Blog"}>Blog/Media<i class="fa fa-caret-down"></i></NavLink>
+            <ul>
+                <li><NavLink to="News">News/Articles</NavLink></li>
+      <li><NavLink to="Gallery">Gallery</NavLink></li></ul></li>
             <li><NavLink to={"/faq"}>FAQ</NavLink></li>
             <li><NavLink to={"/contact"}>Contact</NavLink> </li> 
 
@@ -24,9 +39,11 @@ const NavBar = () => {
 
 NavBar.Wrapper = styled.div`
 height: 100px;
+
+// position:absolute;
 // z-index: 100;
-background-color: transparent;
-background-color: rgba(0, 0, 0, 0.004);
+// background-color: transparent;
+// background-color: rgba(0, 0, 0, 0.004);
 // padding: 10px;
 width: 100%;
 box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
@@ -44,29 +61,59 @@ a {
 i{
     margin: 0 5px;
 }
-.Menu-list{
-    display: grid;
-    grid-template-columns: repeat(6, auto);
-    grid-gap: 30px;
-    list-style: none;
-    text-align: center;
+.Menu{
     width: 50vw;
-    justify-content: end;
-    padding-right: 100px;
-    margin-right: 2rem;
-    .dropDown{
-        float: left;
-        overflow: hidden;
-    }
-    .dropDown .dropBtn {
-        font-size: 16px;  
-        border: none;
-        outline: none;
-        color: #011166;
-        // padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
+   
+    ul {
+        background: white;
+        list-style: none;
         margin: 0;
+        padding-left: 0;
+      }
+      
+      li {
+        color: #011166;
+        background: white;
+        display: block;
+        float: left;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+      }
+        
+      li a {
+        color: #011166;
+      }
+      
+      li:hover {
+        background: #011166;
+        color: white;
+        cursor: pointer;
+      }
+      
+      ul li ul {
+        background: orange;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+      }
+      
+      ul li:hover > ul,
+      ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+      
+      ul li ul li {
+        clear: both;
+        width: 100%;
       }
 }
 `
