@@ -7,7 +7,7 @@ const Accreditation = () => {
     return (
         <Accreditation.Wrapper>
              <div className='accred-text'>
-                            <h3>Accreditation/Certification</h3>
+                            <h3>Accreditation/Certificat<span className="underline">ion</span></h3>
                             </div>
                     <div className='accred-image'>
                         <div>

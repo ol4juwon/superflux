@@ -44,7 +44,7 @@ const Testimonials = () => {
     return (
         <Testimonials.Wrapper>
             <div className='hrader'>
-                <h1>Testimonials</h1>
+                <h1>Testimoni<span className='underline'>als</span></h1>
             </div>
             <div className='tes5timony'>
                 {   testimonies.map((testimony, index) => {
@@ -74,6 +74,7 @@ flex-direction: column;
         width: 100%;
        margin: 30px auto;
         font-size: 40px;
+        line-height:56px;
         font-weight: bold;
         color: #011166;
         text-align: center;
