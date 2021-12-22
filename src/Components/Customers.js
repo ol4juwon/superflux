@@ -1,26 +1,36 @@
 import React from 'react';
 import styled from 'styled-components'
+import arm from '../assets/images/superflux/home/testimony/arm-cust.png'
+import cbn from '../assets/images/superflux/home/testimony/Group 6.png'
+import gtb from '../assets/images/superflux/home/testimony/Group 5.png'
+import fidson from '../assets/images/superflux/home/testimony/fidson.png'
+import courr from '../assets/images/superflux/home/testimony/courier.png'
+import access from '../assets/images/superflux/home/testimony/access.png'
 const Customers = () => {
         const slide = [
             {
-                img:"",
-                alt: ""
+                img:gtb,
+                alt: "GTB"
             },
             {
-                img:"",
-                alt: ""
+                img:arm,
+                alt: "arm insurance"
             },
             {
-                img:"",
-                alt: ""
+                img:cbn,
+                alt: "central bank"
             },
             {
-                img:"",
-                alt: ""
+                img:fidson,
+                alt: "fidson"
             },
             {
-                img:"",
-                alt: ""
+                img:courr,
+                alt: "Courier"
+            },
+            {
+                img:access,
+                alt: "access bank"
             }
 
         ]
