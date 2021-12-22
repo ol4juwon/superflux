@@ -15,7 +15,7 @@ import Thermal from './Components/Pages/Thermal';
 import Brands from './Components/Pages/Brands';
 import SecurePrints from './Components/Pages/SecurePrints';
 import News from './Components/Pages/News';
-import Commercial from './Components/Pages/Commercial';
+// import Commercial from './Components/Pages/Commercial';
 
 import Envelope from './Components/Pages/Envelope';
 function App() {
