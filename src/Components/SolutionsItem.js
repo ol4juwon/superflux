@@ -46,6 +46,14 @@ p{
     margin-left: 20px;
     
 }
+@media only screen and (max-width: 420px){
+width: 100%;
+    display: flex;
+flex-direction:column;
+height: 400px;
+
+
+}
 `
 
 export default Solutionsitem;

@@ -331,17 +331,12 @@ background-blend-mode: multiply;
 
     @media only screen and (max-width: 768px) {
     .cta{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        h1{
-            font-sizw: 12px;
-            text-align:center;
-            line-height: 24px;
-            font-weight: 300px;
-        }
+        position: relative;
+        display: none;
+        visibility: none;
     }
-    }
+
+}
     @media only screen and (max-width: 420px){
         .Loop{
             font-size: 24px;
@@ -373,6 +368,47 @@ background-blend-mode: multiply;
                         text-align: center;
                         margin: 0 auto;
             }
+            .solutions{
+                position: relative;
+                display: none;
+                visibility: none;
+            }
+            .introduction{
+                 display: flex;
+                flex-direction: column reverse;
+                width: 100%;
+                // background-color: #E5E5E5;
+                background:red;
+                height: auto;
+               
+                color: #011166;
+                div{
+                    display: flex;
+                    flex-direction: column reverse;
+                }
+                .image{
+                    display: none;
+                    .bottom{
+                        display:none;
+
+                    }
+                    .top{display: none;}
+                }
+            
+                    .cls3{
+                        position: absolute;
+                        bottom:-30px;
+                        background: white;
+                        right:10px;
+                        height:230px;
+                        border-radius: 5px;
+                        width:370px;
+                        b0x-shadow:  0 30px 50px 0 rgba(28,102,254,0.4);
+                        z-index:9;
+                    }
+                }
+              
+             }
     }
 
 `

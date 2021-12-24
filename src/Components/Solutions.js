@@ -43,6 +43,10 @@ width: 3240px;
         transform: translate(-2160px, 0);
     }
   }
+  @media only screen and (max-width: 420px){
+      width: 100%;
+      height:auto;
+  }
 `
 
 export default Solutions;
