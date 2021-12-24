@@ -52,7 +52,10 @@ width: 100%;
 flex-direction:column;
 // height: 400px;
 float: right;
-
+.card{
+    display:flex;
+    flex-direction:column;
+}
 
 }
 `

@@ -20,10 +20,10 @@ const Solutions = (props) => {
 }
 
 Solutions.Wrapper = styled.div`
-width: 3240px;
+// width: 3240px;
 //   height: 446px;
   clear: both;
-  
+//   overflow: scroll;
   margin:  0 10px !important;
   position: relative;
   animation-name: slider;
@@ -50,6 +50,7 @@ width: 3240px;
   @media only screen and (max-width: 420px){
       width: 100%;
       height:auto;
+      clear: both;
   }
 `
 

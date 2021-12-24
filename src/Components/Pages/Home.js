@@ -81,9 +81,10 @@ const Home = () => {
                </div>
                <div className='outerBound2'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
                <div className='solutions'>
-                <div className='Text'><h3> Our Soluti<span className='underline'>ons</span></h3>
+                <div className='Text'>
+                    <h3> Our Soluti<span className='underline'>ons</span></h3>
                 <p>Get access to the best brand protection technology <br/>
-for your products, variable printing as well as other commercial <br />print solutions. </p></div>
+for your products, variable printing as well as other commercial print solutions. </p></div>
                 <div className='slides'>
                     <Solutions solutions={solutions} />
                 </div>
@@ -189,64 +190,64 @@ background-blend-mode: multiply;
     .introduction{
         width: 100%;
         background-color: #E5E5E5;
-        height: 700px;
+        // height: 700px;
         display: flex;
         flex-direction: row no-wrap;
         color: #011166;
-        .text{
-            width: 50%;
-            padding-left: 100px;
-            padding-top: 100px;
-            h1{
-                font-size: 2.5rem;
-                font-weight: bold;
-                margin-bottom: 1rem;
-            }
-            p{
-                font-style: normal;
-                font-size: 14px;
-                line-height: 28px;
-            }
-        }
-        .image{
-            position:absolute;
-            width: 50%;
-            height: 500px;
-            justify-content: end;
-            right:0px;
-            .top{
-                position: absolute;
-                bottom:-130px;
-                width:418px;
-                height:338px;
-                img{
-                box-shadow: 0 20px 20px 0 rgb(223,221,123);
-                }
-                right:0;
-                z-index:10;
-            }
-            .bottom{
-                position: absolute;
-                right: 126px;
-                bottom:-60px;
-                border-radius:5px;
-                z-index:7;
-                width: 602px;
-                height: 500px;
+        // .text{
+        //     width: 50%;
+        //     padding-left: 100px;
+        //     padding-top: 100px;
+        //     h1{
+        //         font-size: 2.5rem;
+        //         font-weight: bold;
+        //         margin-bottom: 1rem;
+        //     }
+        //     p{
+        //         font-style: normal;
+        //         font-size: 14px;
+        //         line-height: 28px;
+        //     }
+        // }
+        // .image{
+        //     position:absolute;
+        //     width: 50%;
+        //     height: 500px;
+        //     justify-content: end;
+        //     right:0px;
+        //     .top{
+        //         position: absolute;
+        //         bottom:-130px;
+        //         width:418px;
+        //         height:338px;
+        //         img{
+        //         box-shadow: 0 20px 20px 0 rgb(223,221,123);
+        //         }
+        //         right:0;
+        //         z-index:10;
+        //     }
+        //     .bottom{
+        //         position: absolute;
+        //         right: 126px;
+        //         bottom:-60px;
+        //         border-radius:5px;
+        //         z-index:7;
+        //         width: 602px;
+        //         height: 500px;
                 
-            }
-            .cls3{
-                position: absolute;
-                bottom:-30px;
-                background: white;
-                right:10px;
-                height:230px;
-                border-radius: 5px;
-                width:370px;
-                b0x-shadow:  0 30px 50px 0 rgba(28,102,254,0.4);
-                z-index:9;
-            }
-        }
+        //     }
+        //     .cls3{
+        //         position: absolute;
+        //         bottom:-30px;
+        //         background: white;
+        //         right:10px;
+        //         height:230px;
+        //         border-radius: 5px;
+        //         width:370px;
+        //         b0x-shadow:  0 30px 50px 0 rgba(28,102,254,0.4);
+        //         z-index:9;
+        //     }
+        // }
       
      }
      .solutions{
@@ -263,7 +264,7 @@ background-blend-mode: multiply;
              width: 100%;
             //  background-color: #E5E5E5;
             //  border-bottom: 1px solid #011166;
-             color: blue;
+             color: #011166;
              h3{
                  color: #011166;
                  font-size:20px;
@@ -315,7 +316,7 @@ background-blend-mode: multiply;
     }
     .accred{
         width: 100%;
-        height: 300px;
+        // height: 300px;
         // padding:0 100px;
         background: #e2e6fc;
 
@@ -328,7 +329,7 @@ background-blend-mode: multiply;
 
     }
 
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .cta{
         position: relative;
         display: none;
@@ -343,6 +344,11 @@ background-blend-mode: multiply;
         overflow: scroll;
         height: auto;
     }
+    .introduction{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 }
     @media only screen and (max-width: 420px){
         .Loop{
@@ -352,6 +358,7 @@ background-blend-mode: multiply;
         }
         .testimonials{
             height: auto;
+            flex-direction: column-reverse;
         }
         .cta{
             width: 100%;
@@ -378,11 +385,11 @@ background-blend-mode: multiply;
                         text-align: center;
                         margin: 0 auto;
             }
-            .solutions{
-                position: relative;
-                display: none;
-                visibility: none;
-            }
+            // .solutions{
+            //     position: relative;
+            //     display: none;
+            //     visibility: none;
+            // }
             .introduction{
                  display: flex;
                 flex-direction: column reverse;
@@ -425,8 +432,71 @@ background-blend-mode: multiply;
              }
     }
 @media only screen and (max-width: 420px){
-    *{
+    body{
         width: 100%;
+    }
+    .introduction{
+        width: 100%;
+        background: #fff;
+        display: flex;
+        flex-direction: column-reverse ;
+        .text{
+            position: relative;
+            width:100%;
+            // border: 2px solid red;
+            
+            display: flex;
+            flex-direction: column;
+            h1{
+                width: 100%;
+                font-size:24px;
+                line-height: 32px;
+                margin: 0 auto;
+                text-align: center;
+            }
+            p{
+                padding: 20px;
+                font-size: 14px;
+                text-align: center;
+                color: #011166;
+                line-height: 27px;
+            }
+        }
+        .image{
+            positon: relative;
+            // border: 2px solid brown;
+            height: 300px;
+            blend: pass-through;
+            .top{
+                position: relative;
+                top: 100px;
+                left: -100px;
+                width: 160px;
+                height: 140px;
+                filter: drop-shadow(0px 30px 50px rgba(26, 102, 254, 0.16));
+                z-index: 2;
+            }
+            .bottom{
+                position: relative;
+                top: 50px;
+                left: 50px;
+                width: 240px;
+                height: 200px;
+            }
+        }
+    }
+    .solutions{
+                .Text{
+                    h3{
+                        padding-top:  12px;
+                        font-size: 14px;
+                        line-height: 27px;
+                    }
+                    // p{
+                    //     color: #011166;
+                    //     text-align: center;
+                    // }
+                }
     }
 }
 `
