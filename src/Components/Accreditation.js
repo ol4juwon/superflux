@@ -105,36 +105,36 @@ flex-direction: column;
             }
         }
     }
-// }
-// @media only screen and (max-width: 728px){
-//     .accred-text{
-//         // border: 2px solid yellow;
-//     }
-//     .accred-image{
-//         // border: 2px solid red;
-//         div{
-//             width: 380px;
-//             margin: 20px 20px;
-//             border: 1px solid rgba(1, 17, 102, 0.2);
-//             box-sizing: border-box;
-//             /* try-w */
+}
+@media only screen and (max-width: 728px){
+    .accred-text{
+        // border: 2px solid yellow;
+    }
+    .accred-image{
+        // border: 2px solid red;
+        div{
+            width: 380px;
+            margin: 20px 20px;
+            border: 1px solid rgba(1, 17, 102, 0.2);
+            box-sizing: border-box;
+            /* try-w */
             
-//             box-shadow: 0px 4px 16px rgba(144, 153, 200, 0.24);
-//             border-radius: 16px;
-//             img{
+            box-shadow: 0px 4px 16px rgba(144, 153, 200, 0.24);
+            border-radius: 16px;
+            img{
                 
-//                 margin: 30px;
+                margin: 30px;
 
-//             }
-//             p{
-//                 width:100%;
-//                 font-size: 14px;
-//                 color: #011166;
-//                 padding 2px 39px;
-//             }
-//         }
-//     }
-// }
+            }
+            p{
+                width:100%;
+                font-size: 14px;
+                color: #011166;
+                padding 2px 39px;
+            }
+        }
+    }
+}
 `
 
 export default Accreditation;
