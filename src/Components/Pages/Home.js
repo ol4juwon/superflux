@@ -329,5 +329,48 @@ background-blend-mode: multiply;
 
     }
 
+    @media only screen and (max-width: 768px) {
+    .cta{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-sizw: 12px;
+            text-align:center;
+            line-height: 24px;
+            font-weight: 300px;
+        }
+    }
+    }
+    @media only screen and (max-width: 420px){
+        .Loop{
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 300;
+        }
+        .cta{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 5px;
+            padding-top: 100px;
+            h1{
+                font-size: 26px;
+                text-align:center;
+                line-height: 40px;
+                font-weight: 700;   
+            }
+            p{
+                text-align: center;
+                margin: 0 auto;
+                line-height: 30.4px;
+            }
+            .rMore{
+                	    justify-self: center;
+                        text-align: center;
+                        margin: 0 auto;
+            }
+    }
+
 `
 export default Home;

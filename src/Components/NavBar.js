@@ -1,11 +1,12 @@
 import Logo from "../assets/images/Group 53.png"
 import styled from 'styled-components';
+import BACKGROUND from '../assets/images/background.png';
 import { NavLink } from "react-router-dom";
 const NavBar = () => {
     return (
         <NavBar.Wrapper>
             <div className="logo">
-<img src={Logo} alt='' />
+                <img src={Logo} alt='' />
             </div>
     <div className="Menu">
         <ul >
@@ -15,7 +16,7 @@ const NavBar = () => {
                 <li><NavLink to="/About">The Company</NavLink></li>
       <li><NavLink to="/team">The Team</NavLink></li></ul>
         </li>
-            <li >Our Solutions<i class="fa fa-caret-down"></i>
+            <li >Our Solutions<i className="fa fa-caret-down"></i>
             <ul>
             <li><NavLink to="/SecurePrints">Secure Prints</NavLink></li>
             <li><NavLink to="/CommercialPrints">Commercial Print</NavLink></li>
@@ -24,7 +25,7 @@ const NavBar = () => {
                 <li><NavLink to="/Envelope">Envelope Production</NavLink></li>
                 <li><NavLink to="/Thermal">Thermal/POS roll Production</NavLink></li>
       <li><NavLink to="#">Link 3</NavLink></li></ul></li>
-            <li><NavLink to={"/Blog"}>Blog/Media<i class="fa fa-caret-down"></i></NavLink>
+            <li><NavLink to={"/Blog"}>Blog/Media<i className="fa fa-caret-down"></i></NavLink>
             <ul>
                 <li><NavLink to="/News">News/Articles</NavLink></li>
       <li><NavLink to="/Gallery">Gallery</NavLink></li></ul></li>
@@ -42,8 +43,9 @@ height: 100px;
 
 // position:absolute;
 // z-index: 100;
-// background-color: transparent;
-// background-color: rgba(0, 0, 0, 0.004);
+background:url(${BACKGROUND}) rgba(5, 23, 43, 0.6) ; 
+// positio¿n: absolute;
+background-blend-mode: multiply;
 // padding: 10px;
 width: 100%;
 box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
@@ -65,7 +67,7 @@ i{
     width: 50vw;
    
     ul {
-        background: white;
+        // background: white;
         list-style: none;
         margin: 0;
         padding-left: 0;
@@ -73,7 +75,7 @@ i{
       
       li {
         color: #011166;
-        background: white;
+       // background: white;
         display: block;
         float: left;
         padding: 1rem;
@@ -119,6 +121,21 @@ i{
         width: 100%;
       }
 }
+@media only screen and (max-width: 768px) {
+  
+  background:url(${BACKGROUND}) rgba(5, 23, 43, 0.6) ; 
+  // positio¿n: absolute;
+  background-blend-mode: multiply;
+opacity: 0.1;
+  .logo{
+    width: 200px;
+    padding:2px;
+    margin : 0;
+  }
+  .Menu{
+    display: none;
+  }
+} 
 `
 
 export default NavBar;

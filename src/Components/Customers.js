@@ -43,7 +43,7 @@ const Customers = () => {
                     {
                         slide.map(reet => {
                             return (
-                                <div className='cardsss'> <img src={reet.img} alt={reet.alt} /></div>
+                                <div className='cardsss' key={reet.alt}> <img src={reet.img} alt={reet.alt} /></div>
                             )
                         })
                     }
