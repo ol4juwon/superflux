@@ -58,20 +58,11 @@ const Choose = () => {
                     
             </div>
             <div className='content'>
-                <Chooseitems reason={reasons[0]} />
-                <Chooseitems reason={reasons[1]} />
-                <Chooseitems reason={reasons[2]} />
-                <Chooseitems reason={reasons[3]} />
-                <Chooseitems reason={reasons[4]} />
-                <Chooseitems reason={reasons[5]} />
-                <Chooseitems reason={reasons[6]} />
-                <Chooseitems reason={reasons[7]} />
-                <Chooseitems reason={reasons[8]} />
-            {/* {                reasons.map((reason,index) => {
-            //    {console.log(reason)}
-               <Chooseitems reason={reasons} />
+                
+               {                reasons.map((reason,index) => {
+              return <Chooseitems key={index} reason={reason} />
         }
-            )} */}
+            )}
             
             {/* { <Chooseitems reason />} */}
             </div>
@@ -103,5 +94,12 @@ color:black;
         color: #011166;
     }
 }
+@media only screen and (max-width: 768px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+} 
 `
 export default Choose;

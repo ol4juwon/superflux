@@ -4,53 +4,54 @@ const Solutionsitem = (props) => {
     const { img, h3, p} = props.details
     return (
         <Solutionsitem.Wrapper>
-        <div className='images'>
+      <div className='card'>
+      <div className='images'>
 <img src={img} alt=""/>
         </div> 
         <div className='texts'>
             <h3>{h3}</h3>
             <p>{p}</p>
-        </div>           
+        </div>     
+          
+          </div>        
         </Solutionsitem.Wrapper>
     );
 }
 
 Solutionsitem.Wrapper = styled.div`
-width: 500px;
-height: 230px;
-float: left;
+width: 410px;
+// height: 200px;
+// border: 2px solid green;
+border-radius: 10px;
 display: flex;
-margin-left: 50px;
-padding-bottom: 10px;
-margin-bottom: 10px;
-text-align: left;
+filter: drop-shadow(0px 4px 16px rgba(144, 153, 200, 0.24));
+flex-direction: column wrap;
+margin: 0 20px;
+background: transparent !important;
 .images{
-    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    img{
+        width: 200px;
+        height: 200px;
+    }
 }
 .texts{
-    border-radius: 0px 4px 4px 0px;
-    background: #FFFFFF;
-}
-h3{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-top: 30px;
+    width: 200px;
+    height: 200px;
     color: #011166;
+    // border: 2px solid blue;
 }
-p{
-    font-size: 14px;
-    margin-bottom: 20px;
-    color: #011166;
-    margin-left: 20px;
-    
+.card{
+    display: flex;
+    flex-direction: row;
 }
 @media only screen and (max-width: 420px){
 width: 100%;
     display: flex;
 flex-direction:column;
-height: 400px;
+// height: 400px;
+float: right;
 
 
 }

@@ -21,15 +21,19 @@ const Solutions = (props) => {
 
 Solutions.Wrapper = styled.div`
 width: 3240px;
-  height: 446px;
+//   height: 446px;
   clear: both;
+  
+  margin:  0 10px !important;
   position: relative;
   animation-name: slider;
+  display: flex;
+  flex-direction: row;
   animation-duration: 30s;
   animation-delay: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-direction: normal;
+  animation-direction: alternate;
   animation-fill-mode: backwards;
   animation-play-state: running;
   @keyframes slider {

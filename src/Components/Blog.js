@@ -28,7 +28,7 @@ Blog.Wrapper = styled.div`
   width: 100%;
   height: 80%;
   text-align: center;
-  background: ;
+//   background: ;
   .Header {
     width: 100%;
     height: auto;
@@ -109,6 +109,28 @@ Blog.Wrapper = styled.div`
         grid-row-start: 2;
         grid-row-end: 3;
       }
+    }
+  }
+  @media only screen and (max-witdh: 420px){
+      width: 100%;
+      overflow:  scroll;
+      .Header{
+          width: 100%;
+          h3{
+              padding: 0px;
+              font-size: 24px;
+              font-weight: 32px;
+          }
+      }
+  } 
+  @media only screen and (max-width: 728px){
+    .Header{
+        width: 100%;
+        h3{
+            padding: 0px;
+            font-size: 24px;
+            font-weight: 32px;
+        }
     }
   }
 `;

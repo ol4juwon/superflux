@@ -76,6 +76,24 @@ flex-direction: column;
         }
     }
 }
+@media only screen and (max-witdh: 420){
+    width: 100%;
+    display: flex;
+    flex-direction:  column;;
+    .accred-image{
+        width:80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        margin: 0 auto;
+        div{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
 `
 
 export default Accreditation;

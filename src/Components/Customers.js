@@ -76,5 +76,13 @@ width:100%;
         height:200px;
     }
 }
+@media only screen and (max-width: 420){
+    .customers--slides{
+        width: 100%;
+        .cardsss{
+            overflow:: scroll;
+    }
+}
+}
 `
 export default Customers;

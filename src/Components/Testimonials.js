@@ -60,7 +60,7 @@ const Testimonials = () => {
     );
 }
 Testimonials.Wrapper = styled.div`
-height: 100%;
+// height: 100%;
 background: #E2E6FC;
 width: 100%;
 padding-bottom: 50px;
@@ -96,6 +96,12 @@ flex-direction: column;
 .dotts{
     // height: 100px;
     // background: yellow;
+}
+@media only screen and (max-width: 420px){
+    .tes5timony{
+        width: 100%;
+        overflow: scroll;
+    }
 }
 `
 export default Testimonials;

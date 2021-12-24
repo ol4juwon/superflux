@@ -250,9 +250,9 @@ background-blend-mode: multiply;
       
      }
      .solutions{
-         height: 320px;
+        //  height: 320px;
          width: 100%;
-         background-color: #E5E5E5;
+         background-color: #F4F8FC;
          padding-bottom: 50px;
         //  border: 1px solid #011166;
          display: flex;
@@ -261,7 +261,7 @@ background-blend-mode: multiply;
             text-align: center;
          .Text{
              width: 100%;
-             background-color: #E5E5E5;
+            //  background-color: #E5E5E5;
             //  border-bottom: 1px solid #011166;
              color: blue;
              h3{
@@ -283,9 +283,8 @@ background-blend-mode: multiply;
          }
          .slides{
             width: 80%;
-            height: 446px;
-             position: relative;
-            text-align: center;
+            // height: 446px;
+           
             overflow: hidden;
          }
      }
@@ -306,7 +305,7 @@ background-blend-mode: multiply;
         height: 500px;
         background: #f4fbfc;
         // padding: 0 10px;
-        padding-bottom: 30px;
+        // padding-bottom: 30px;
     }
     .testimonials{
         width: 100%;
@@ -323,7 +322,7 @@ background-blend-mode: multiply;
     }
     .customers{
         width: 100%;
-        height: 397pxs;
+        height: 397px;
         padding:30px 100px;
         background: #e2e6fc;
 
@@ -335,13 +334,24 @@ background-blend-mode: multiply;
         display: none;
         visibility: none;
     }
-
+    .testimonials{
+        height: auto;
+        overflow: scroll;
+    }
+    .blog{
+        width: 100%;
+        overflow: scroll;
+        height: auto;
+    }
 }
     @media only screen and (max-width: 420px){
         .Loop{
             font-size: 24px;
             line-height: 24px;
             font-weight: 300;
+        }
+        .testimonials{
+            height: auto;
         }
         .cta{
             width: 100%;
@@ -409,7 +419,15 @@ background-blend-mode: multiply;
                 }
               
              }
+             .platform{
+                 display: flex;
+                 flex-direction: column;
+             }
     }
-
+@media only screen and (max-width: 420px){
+    *{
+        width: 100%;
+    }
+}
 `
 export default Home;
