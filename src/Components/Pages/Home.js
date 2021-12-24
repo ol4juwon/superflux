@@ -359,13 +359,16 @@ background-blend-mode: multiply;
                 text-align:center;
                 line-height: 40px;
                 font-weight: 700;   
+                padding-top:40px
             }
             p{
+                padding-top: 40px;
                 text-align: center;
                 margin: 0 auto;
                 line-height: 30.4px;
             }
             .rMore{
+                margin-top: 40px;
                 	    justify-self: center;
                         text-align: center;
                         margin: 0 auto;
