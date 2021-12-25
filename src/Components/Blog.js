@@ -5,6 +5,28 @@ import conference from "../assets/images/superflux/home/why choose/conference.pn
 import Image40 from "../assets/images/superflux/home/why choose/image40.png";
 import newsImg from "../assets/images/superflux/home/testimony/blog1.png"
 const Blog = () => {
+    const news = [{
+        img: newsImg,
+        alt: "",
+        title: "",
+        text: "",
+        link: ""
+    },
+    {img: blogMan,
+        alt: "",
+        title: "",
+        text: "",
+        link: "" },
+{img: conference,
+    alt: "",
+    title: "",
+    text: "",
+    link: ""},
+{img: Image40,
+    alt: "",
+    title: "",
+    text: "",
+    link: ""}]
   return (
     <Blog.Wrapper>
       <div className="Header">
@@ -19,7 +41,32 @@ const Blog = () => {
           <div className="blog3"></div>
           <div className="blog4"></div>
         </div>
+        <div className="carousel slides" data-ride="carousel">
+            <ol className="carousel-indicators">
+              
+                {news.map( (items, index) =>{
+                    return(
+                        <li data-target="#carouselExampleIndicators" data-slide-to={index} className="active"></li>
+    
+                    )
+                })}
+
+            </ol>
+
+           
+            <div class="carousel-inner">
+        
+                {news.map((item, index) => {
+                    return (
+                        <div  className="carousel-item ">
+                <img className="d-block w-100 .img-fluid" src={item.img} alt="First slide"/>
+                </div>
+                    )
+                })}
+         </div>
+        </div>
       </div>
+      
     </Blog.Wrapper>
   );
 };
@@ -131,6 +178,16 @@ Blog.Wrapper = styled.div`
             font-size: 24px;
             font-weight: 32px;
         }
+    }
+    .content{
+        display: flex;
+        flex-direction row;
+        .Blog{
+            // width: 100%;
+            display: none !important;
+            // flex-direction: row;
+        }
+       
     }
   }
 `;

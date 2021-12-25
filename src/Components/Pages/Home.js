@@ -329,27 +329,7 @@ background-blend-mode: multiply;
 
     }
 
-@media only screen and (max-width: 768px) {
-    .cta{
-        position: relative;
-        display: none;
-        visibility: none;
-    }
-    .testimonials{
-        height: auto;
-        overflow: scroll;
-    }
-    .blog{
-        width: 100%;
-        overflow: scroll;
-        height: auto;
-    }
-    .introduction{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-}
+
     @media only screen and (max-width: 420px){
         .Loop{
             font-size: 24px;
@@ -359,6 +339,12 @@ background-blend-mode: multiply;
         .testimonials{
             height: auto;
             flex-direction: column-reverse;
+        }
+        .solutions{
+            .slides{
+                width: 100%;
+                // border: 2px solid red;
+            }
         }
         .cta{
             width: 100%;
@@ -429,10 +415,25 @@ background-blend-mode: multiply;
              .platform{
                  display: flex;
                  flex-direction: column;
+                
+                //  padding: 0;
+             }
+             .blog{
+                 display: flex;
+                 flex-direction: row nowrap;
+                 height: auto;
+                 width: 100%;
              }
     }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 728px){
     body{
+        width: 100%;
+    }
+    .blog{
+        display: flex;
+        border: 2px solid red;
+        flex-direction: row ;
+        height: auto;
         width: 100%;
     }
     .introduction{

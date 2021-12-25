@@ -98,7 +98,14 @@ color:black;
     .content{
         display: flex;
         flex-direction: column;
-        width: 400px;
+        // border: 2px solid red;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .Header{
+        h1{
+            font-size: 24px;
+        }
     }
 } 
 `
