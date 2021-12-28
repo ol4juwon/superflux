@@ -6,7 +6,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Home from './Components/Pages/Home';
 import Team from './Components/Pages/Team';
 import Contact from './Components/Pages/Contact';
-import Footer from './Components/Footer';
+// import Footer from './Components/Footer';
 import Faq from './Components/Pages/Faq'
 import Blog from "./Components/Pages/Blog"
 import About from "./Components/Pages/About"
@@ -40,7 +40,7 @@ function App() {
              <Route path={"/Secureprints"} exact component={SecurePrints } />
              <Route path={"/news"} exact component={News} />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
           </BrowserRouter>
          
     </App.Wrapper>

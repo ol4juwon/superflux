@@ -14,39 +14,39 @@ const Choose = () => {
     const reasons = [
         {
             logo:starImg,
-            text: "We print security docuemnts on secure printers and provide a secure printing service for your business."
+            text: "High-quality products and services"
         },
         {
             logo:headsetImg,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "We listen, understand, proffer and execute solutions"
         },
         {
             logo: fastforwdIcon,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "Fast turn-around time"
         },
         {
             logo: handbulbIcon,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "End to end document production and management solutions"
         },
         {
             logo: bulb,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "Innovative solution providers"
         },
         {
             logo:spanner,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "State of the art equipment"
         },
         {
             logo: load,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "Highly trained & motivated workforce"
         },
         {
             logo: note,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "Forensic analysis of fraudulently altered cheques & other security documents "
         },
         {
             logo: warehouse,
-            text: "We print hard cover books and provide a secure printing service for your business."
+            text: "Highly secure and well protected production facility"
         }
     ]
     return (

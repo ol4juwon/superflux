@@ -60,7 +60,7 @@ const Testimonials = () => {
     );
 }
 Testimonials.Wrapper = styled.div`
-// height: 100%;
+// height: 1000px;
 background: #E2E6FC;
 width: 100%;
 padding-bottom: 50px;

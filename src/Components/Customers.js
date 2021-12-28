@@ -55,6 +55,7 @@ Customers.Wrapper = styled.div`
 display: flex;
 flex-direction: column;
 width:100%;
+
     .customers--heading{
         display: flex;
         width: 100%;
@@ -76,11 +77,15 @@ width:100%;
         height:200px;
     }
 }
-@media only screen and (max-width: 420){
+@media only screen and (max-width: 600px){
+    width: 100%;
+    overflow: hidden;
     .customers--slides{
         width: 100%;
+        // border: 2px solid red;
+        overflow: scroll;
         .cardsss{
-            overflow:: scroll;
+            
     }
 }
 }

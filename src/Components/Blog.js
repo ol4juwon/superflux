@@ -8,25 +8,31 @@ const Blog = () => {
     const news = [{
         img: newsImg,
         alt: "",
-        title: "",
-        text: "",
+        type: "Article",
+        title: "Nigerian COVID Story",
+        text: "Exactly two weeks after the first case in Egypt, we woke up to the news that Lagos, the commercial hub of Nigeria, had recorded the incident case of covid-19 in Nigeria. We were restles... Read more",
         link: ""
     },
     {img: blogMan,
-        alt: "",
-        title: "",
-        text: "",
+        alt: "Tokunbo talabi",
+        type: "News",
+        title: "Tokunboh Talabi, President of Superflux, appointed as SSG in Ogun State",
+        text: "Ogun State Governor, Dapo Abiodun announced the Founder and President, Superflux International Limited Mr. Olatokunbo Joseph Talabi as the Secretary to the State Government. Read more",
         link: "" },
 {img: conference,
     alt: "",
-    title: "",
-    text: "",
+    title: "Superflux Appoints new MD/CEO",
+    type: "News",
+    text: "Mr. Gabriel Okonkwo, the erstwhile Chief Operating Officer is now the Managing Director/ Chief Executive Officer of Superflux International Limited ... Read more",
     link: ""},
 {img: Image40,
     alt: "",
     title: "",
+    type: "",
     text: "",
     link: ""}]
+
+  
   return (
     <Blog.Wrapper>
       <div className="Header">
@@ -41,32 +47,43 @@ const Blog = () => {
           <div className="blog3"></div>
           <div className="blog4"></div>
         </div>
-        <div className="carousel slides" data-ride="carousel">
-            <ol className="carousel-indicators">
-              
-                {news.map( (items, index) =>{
-                    return(
-                        <li data-target="#carouselExampleIndicators" data-slide-to={index} className="active"></li>
-    
-                    )
-                })}
-
-            </ol>
-
-           
-            <div class="carousel-inner">
-        
-                {news.map((item, index) => {
-                    return (
-                        <div  className="carousel-item ">
-                <img className="d-block w-100 .img-fluid" src={item.img} alt="First slide"/>
-                </div>
-                    )
-                })}
-         </div>
-        </div>
       </div>
-      
+      <div className="news">
+      <div id="carouselExampleSlidesOnly" className="carousel slide bl--og" data-ride="carousel">
+        <ol className="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div className="carousel-inner">
+    
+      {
+        news.map((item, index) => {
+          return   index === 0 ?( 
+          <div className="carousel-item active">
+            <img className="d-block w-100" src={item.img} alt="first slide"/>
+            <div className="carousel-caption  d-md-block">
+              <h5>{item.title}</h5>
+              <p>{item.text}</p>
+            </div>
+          </div> ):  
+           (
+
+            <div className="carousel-item">
+                    <img className="d-block w-100" src={item.img} alt="Second slide"/>
+                    <div className="carousel-caption  d-md-block">
+                    <h5>{item.title}</h5>
+                    <p>{item.text}</p>
+                  </div>
+            </div>
+          );
+        })
+      }
+  </div>
+  </div>
+</div>
+
+     
     </Blog.Wrapper>
   );
 };
@@ -76,6 +93,7 @@ Blog.Wrapper = styled.div`
   height: 80%;
   text-align: center;
 //   background: ;
+
   .Header {
     width: 100%;
     height: auto;
@@ -90,6 +108,9 @@ Blog.Wrapper = styled.div`
       color: #011166;
     }
   }
+ .news{
+   display: none !important;
+ }
   .content {
     display: flex;
     flex-direction: row;
@@ -97,6 +118,19 @@ Blog.Wrapper = styled.div`
     // padding-top: 10px;
     height: 100%;
     // border: 1px solid red;
+    .blo--og{
+      display: none !important;
+    }
+    .slide{
+      display: none !important;
+      width: 0px;
+      height: 0px;
+    }
+    .carousel{
+      display: none !important;
+      width: 0px;
+      height: 0px;
+    }
     .Blog {
       width: 80%;
       height: 100%;
@@ -104,6 +138,7 @@ Blog.Wrapper = styled.div`
       display: grid;
       grid-template-columns: repeat(6, 2fr);
       grid-gap: 50px;
+      
       .bg2 {
         background: url(${blogMan}) #011166;
         mix-blend-mode: multiply;
@@ -187,8 +222,19 @@ Blog.Wrapper = styled.div`
             display: none !important;
             // flex-direction: row;
         }
+        .carousel-item> img{
+          width:  370px;
+          height: 480px;
+        }
        
     }
+  }
+  .carousel-item{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+/* try */
+mix-blend-mode: multiply;
+blend:passthrough;
+filter: drop-shadow(0px 4px 24px rgba(1, 17, 102, 0.14));
   }
 `;
 export default Blog;

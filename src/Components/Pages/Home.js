@@ -5,6 +5,9 @@ import  Group1 from '../../assets/images/Rectangle 176.png'
 import SECUREPRINTS from '../../assets/images/secureprints.png'
 import BACKGROUND from '../../assets/images/background.png';
 import HARDCOVER from '../../assets/images/hardcover.png'
+import Envelope from '../../assets/images/env/IMG_9187 1.png'
+import VARIABLEPRINT from '../../assets/images/superflux/variable.png'
+import THERMAL from '../../assets/images/superflux/thermal.png'
 import Group2 from '../../assets/images/Rectangle 177.png'
 import Solutions from '../Solutions';
 import Blog from '../Blog';
@@ -12,36 +15,37 @@ import Choose from '../Choose';
 import Testimonials from '../Testimonials';
 import Accreditation from '../Accreditation';
 import Customers from '../Customers'
+import Footer from '../Footer'
 const Home = () => {
     const solutions = [
         {
             img: SECUREPRINTS,
             h3: "Secure Prints",
-            p: "We print security docuemnts on secure printers and provide a secure printing service for your business."
+            p: "We have created a value added solution that manufactures and finishes cheques ready for delivery... "
         },
         {
             img:HARDCOVER,
-            h3: "Hard Cover",
-            p: "We print hard cover books and provide a secure printing service for your business."
+            h3: "Commercial Print",
+            p: "Our commercial print unit is well equipped with state-of-the-art print technology, comprehensive finishing."
 
         }
         ,
         {
-            img:HARDCOVER,
-            h3: "Hard Cover",
-            p: "We print hard cover books and provide a secure printing service for your business."
+            img:Envelope,
+            h3: "Envelope Production",
+            p: "Superflux WINKER + DUNNEBIER envelope making machines is set for high volume production of best in class quality envelopes."
 
         }
         , {
-            img:HARDCOVER,
-            h3: "Hard Cover",
-            p: "We print hard cover books and provide a secure printing service for your business."
+            img:THERMAL,
+            h3: "Thermal/POS Roll production",
+            p: "We are a trusted local manufacturer of high quality thermal roll which is durable, affordable and ensures faster printing. We provide customization solution for the pre-printing and supply of Automated Teller Machine (ATM) and Point of Sale (POS) printer receipts deployable by tellers and ATM machines. This involves the pre-printing of your organization logo on Thermal Paper Roll receipt also known as transaction slip. The back of this receipt can also be used to advertise your products or information concerning your business including feedback and emergency or assistance call numbers. We are a wholesale supplier of thermal rolls."
 
         }
         , {
-            img:HARDCOVER,
-            h3: "Hard Cover",
-            p: "We print hard cover books and provide a secure printing service for your business."
+            img:VARIABLEPRINT,
+            h3: "Variable Data Printing",
+            p: "Variable Data Printing lets you personalize  your print with unique data in large scale. "
 
         }
         
@@ -105,12 +109,13 @@ for your products, variable printing as well as other commercial print solutions
                <section className='customers'>
                     <Customers />
                </section>
+               <Footer />
         </Home.Wrapper>
     );
 }
 Home.Wrapper = styled.div`
     display: flex;
-     background:url(${BACKGROUND}) rgba(5, 23, 43, 0.6) ; 
+     background:url(${BACKGROUND}) rgba(5, 23, 43, 0.6) no-repeat;; 
 // positio¿n: absolute;
 background-blend-mode: multiply;
 .Loop{
@@ -190,52 +195,52 @@ background-blend-mode: multiply;
     .introduction{
         width: 100%;
         background-color: #E5E5E5;
-        // height: 700px;
+        height: 700px;
         display: flex;
         flex-direction: row no-wrap;
         color: #011166;
-        // .text{
-        //     width: 50%;
-        //     padding-left: 100px;
-        //     padding-top: 100px;
-        //     h1{
-        //         font-size: 2.5rem;
-        //         font-weight: bold;
-        //         margin-bottom: 1rem;
-        //     }
-        //     p{
-        //         font-style: normal;
-        //         font-size: 14px;
-        //         line-height: 28px;
-        //     }
-        // }
-        // .image{
-        //     position:absolute;
-        //     width: 50%;
-        //     height: 500px;
-        //     justify-content: end;
-        //     right:0px;
-        //     .top{
-        //         position: absolute;
-        //         bottom:-130px;
-        //         width:418px;
-        //         height:338px;
-        //         img{
-        //         box-shadow: 0 20px 20px 0 rgb(223,221,123);
-        //         }
-        //         right:0;
-        //         z-index:10;
-        //     }
-        //     .bottom{
-        //         position: absolute;
-        //         right: 126px;
-        //         bottom:-60px;
-        //         border-radius:5px;
-        //         z-index:7;
-        //         width: 602px;
-        //         height: 500px;
+        .text{
+            width: 50%;
+            padding-left: 100px;
+            padding-top: 100px;
+            h1{
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-style: normal;
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+        .image{
+            position:absolute;
+            width: 50%;
+            height: 500px;
+            justify-content: end;
+            right:0px;
+            .top{
+                position: absolute;
+                bottom:-130px;
+                width:418px;
+                height:338px;
+                img{
+                box-shadow: 0 20px 20px 0 rgb(223,221,123);
+                }
+                right:0;
+                z-index:10;
+            }
+            .bottom{
+                position: absolute;
+                right: 126px;
+                bottom:-60px;
+                border-radius:5px;
+                z-index:7;
+                width: 602px;
+                height: 500px;
                 
-        //     }
+            }
         //     .cls3{
         //         position: absolute;
         //         bottom:-30px;
@@ -247,7 +252,7 @@ background-blend-mode: multiply;
         //         b0x-shadow:  0 30px 50px 0 rgba(28,102,254,0.4);
         //         z-index:9;
         //     }
-        // }
+        }
       
      }
      .solutions{
@@ -310,7 +315,7 @@ background-blend-mode: multiply;
     }
     .testimonials{
         width: 100%;
-        height: 400px;
+        // height: 400px;
         // padding:10px 100px;
         background: #e2e6fc;
     }
@@ -498,6 +503,9 @@ background-blend-mode: multiply;
                     //     text-align: center;
                     // }
                 }
+    }
+    .customers{
+        padding: 0;
     }
 }
 `

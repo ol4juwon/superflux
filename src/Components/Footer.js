@@ -6,8 +6,8 @@ import logo from '../assets/images/bg.png'
 const Footer = () => {
     return (
         <Footer.Wrapper>
-            <div className='Quicklinks'> <div className='Logo'><NavLink to={"/"}><img src={logo} alt="superflux home"></img></NavLink></div>
-            <div><h3>Company</h3><ul><li><NavLink to={"/"}>About SuperFlux</NavLink></li>
+            <div className='Quicklinks'> <div className='Logo lg'><NavLink to={"/"}><img src={logo} alt="superflux home"></img></NavLink></div>
+            <div className='.qkAct1'><h3>Company</h3><ul><li><NavLink to={"/"}>About SuperFlux</NavLink></li>
                 <li><NavLink to={"/"}>Blog</NavLink></li>
                 <li><NavLink to={"/"}>Career</NavLink></li>
                 <li><NavLink to={"/"}>Partners</NavLink></li>
@@ -15,7 +15,7 @@ const Footer = () => {
                 <li><NavLink to={"/"}>Privacy &amp; Terms</NavLink></li>
 
             </ul></div>
-            <div><h3>Solutions</h3>
+            <div className='.qkAct2'><h3>Solutions</h3>
                 <ul>
                     <li><NavLink to={"/"}>Cheque Printing &amp; Personalization</NavLink></li>
                     <li><NavLink to={"/"}>Revenue documents</NavLink></li>
@@ -28,8 +28,8 @@ const Footer = () => {
                     <li><NavLink to={"/"}>Thermal Rolls</NavLink></li>
                 </ul>
             </div>
-            <div><h3>Contact</h3><ul><li><NavLink to={"/"}>Sales</NavLink></li><li><NavLink to={"/"}>Support</NavLink></li><li><NavLink to={"/"}>Report Abuse</NavLink></li></ul></div>
-            <div><h3>Socials</h3><ul><li><NavLink to={"/"}>Facebook</NavLink></li><li><NavLink to={"/"}>Twitter</NavLink></li><li><NavLink to={"/"}>Instagram</NavLink></li></ul></div>
+            <div className='.qkAct3'><h3>Contact</h3><ul><li><NavLink to={"/"}>Sales</NavLink></li><li><NavLink to={"/"}>Support</NavLink></li><li><NavLink to={"/"}>Report Abuse</NavLink></li></ul></div>
+            <div className='.qkAct4'><h3>Socials</h3><ul><li><NavLink to={"/"}>Facebook</NavLink></li><li><NavLink to={"/"}>Twitter</NavLink></li><li><NavLink to={"/"}>Instagram</NavLink></li></ul></div>
 </div>
 <div className='copyright'>
 &copy; 2021, <i>Superflux International Limited</i>.  All Rights Reserved.
@@ -39,9 +39,10 @@ const Footer = () => {
 }
 Footer.Wrapper = styled.div`
 width: 100%;
-height: auto;
+// height: auto;
 position: relative;
-bottom:0;
+z-index: 20;
+
 underline{
     text-decoration: underline;
     text-decoration-thickness: 3px;
@@ -69,8 +70,8 @@ ul{
 a{
     color: white;text-decoration: none;
 }
-background:  url(${bg}),linear-gradient(0deg, rgba(0,0,0,0.8) , rgba(0,0,0,0.8));
-mix-blend-mode: screen;
+background:  url(${bg}),linear-gradient(0deg, rgba(0,0,0,0.8) , rgba(0,0,0,0.8)) no-repeat;
+mix-blend-mode: multiply;
 background-attachment:cover;
 .Quicklinks{
 display: grid;
@@ -86,6 +87,17 @@ div{
         padding-bottom: 15px;
         justify-text: left;
     }
+}
+@media only screen and (max-width: 600px) {
+    .Quicklinks{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-rows: minmax(100px, auto);
+        grid-template-areas: 
+        ".lg .lg"
+        ".qkAct1 .qkAct2"
+        ".qkAct3 .qkAct4";
+        }
 }
 
 `
