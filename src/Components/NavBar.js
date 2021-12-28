@@ -67,7 +67,7 @@ i{
     width: 50vw;
    
     ul {
-        // background: white;
+        background: white;
         list-style: none;
         margin: 0;
         padding-left: 0;

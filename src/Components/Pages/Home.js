@@ -449,7 +449,7 @@ background-blend-mode: multiply;
         .text{
             position: relative;
             width:100%;
-            // border: 2px solid red;
+            border: 2px solid red;
             
             display: flex;
             flex-direction: column;
@@ -470,7 +470,7 @@ background-blend-mode: multiply;
         }
         .image{
             positon: relative;
-            // border: 2px solid brown;
+            border: 2px solid brown;
             height: 300px;
             blend: pass-through;
             .top{

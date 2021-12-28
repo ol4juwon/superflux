@@ -50,32 +50,37 @@ flex-direction: column;
     }
 }
 .accred-image{
-    // width:80%;
-    // display: grid;
+    width:80%;
+    display: flex;
+    flex-direction: row;
     // grid-template-columns: 1fr 1fr 1fr;
     // grid-gap: 40px;
-    // margin: 0 auto;
-    // div{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    div{
 
-    //    color: #011166;
-    //     width : 400px;
+       color: #011166;
+        width : 400px;
+        margin: 0px 10px;
     //     height: 150px;
     //     background: white;
-    //     border-radius: 10px;
-    //     padding: 0 100px;
-    //     border: 1px solid rgba(1, 17, 102, 0.2);
-    //     box-shadow: 8px 4px 16px rgba(144,153,200, 0.24);
-    //      img{
-    //         // width: 50px;
-    //         height: 50px;
-    //         // border: 1px solid #011166;
-    //         margin: 10px;
-    //     }p{
-    //         font-size: 14px;
-    //         margin-bottom: 20px;
-    //         margin-left: 20px;
-    //     }
-    // }
+        border-radius: 10px;
+        padding: 0 100px;
+        padding-left: 10px;
+        border: 1px solid rgba(1, 17, 102, 0.2);
+        box-shadow: 8px 4px 16px rgba(144,153,200, 0.24);
+         img{
+            // width: 50px;
+            height: 50px;
+            // border: 1px solid #011166;
+            margin: 10px;
+        }
+    p{
+            font-size: 14px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+    }
 }
 @media only screen and (max-witdh: 420){
     .accred-text{
@@ -83,6 +88,10 @@ flex-direction: column;
     }
     .accred-image{
         // border: 2px solid red;
+        display: flex;
+        // grid-template-columns:  1fr;
+        flex-direction: column;
+        width: 100%;
         div{
             width: 380px;
             margin: 20px 20px;
@@ -111,12 +120,15 @@ flex-direction: column;
         // border: 2px solid yellow;
     }
     .accred-image{
-        // border: 2px solid red;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid red;
         div{
-            width: 380px;
+            width: 300px;
             margin: 20px 20px;
             border: 1px solid rgba(1, 17, 102, 0.2);
             box-sizing: border-box;
+            // border: 2px solid red;
             /* try-w */
             
             box-shadow: 0px 4px 16px rgba(144, 153, 200, 0.24);
