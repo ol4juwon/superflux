@@ -115,17 +115,40 @@ flex-direction : column;
         .vision{
            position: relative;
            width: 100%;
-            .vis-img{
-              
+           height: 570px;
+           .vis-img, .tablet--sec{
+               position: absolute;
+               left: 0;
+               img{
+                   padding-left: 20px;
+                   margin: 0 auto;
+               }
+           } 
+           .vis-img{
+            // border: 2px solid red;
+            width: 100%;
+              z-index: 1;
             }
+            
             .tablet--sec{
             
-                border: 2px solid red;
+                // border: 2px solid red;
                 // height: 200px;
+                width: 80%;
+                margin:  0 auto;
                 background: #1A66FE;
-                // z-index: 20;
+                bottom: -20px;
+                color: white;
+                left: 10%;
+                padding: 10px;
+                border-radius: 10%;
+                z-index: 2;
+                h1{
+                    font-size: 20px;
+                }
                 p{
                     text-align: center;
+                    font-size: 15px;
                 }
                 span{
                     text-align: center;
