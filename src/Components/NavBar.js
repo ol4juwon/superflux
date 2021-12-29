@@ -44,11 +44,11 @@ const NavBar = () => {
         </NavLink>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           <NavLink className="dropdown-item" to="/">Blog</NavLink>
-          <NavLink className="dropdown-item" to="/">Gallery</NavLink>
+          <NavLink className="dropdown-item" to="/gallery">Gallery</NavLink>
            </div>
       </li> 
       <li className="nav-item">
-        <NavLink className="nav-link" to="/">FAQs</NavLink>
+        <NavLink className="nav-link" to="/faq">FAQs</NavLink>
       </li>
       <li className="nav-item">
         <NavLink className="nav-link" to="/contact">Contact Us</NavLink>

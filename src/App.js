@@ -18,6 +18,7 @@ import News from './Components/Pages/News';
 // import Commercial from './Components/Pages/Commercial';
 
 import Envelope from './Components/Pages/Envelope';
+import Gallery from './Components/Pages/Gallery';
 function App() {
   return (
     <App.Wrapper>
@@ -33,6 +34,7 @@ function App() {
             <Route path={"/Faq"} exact component={Faq}/>
             <Route path={"/About"} exact component={About} />
              <Route path={"/Blog"} exact component={Blog} />
+             <Route path={"/gallery"} exact component={Gallery} />
              <Route path={"/VariableData"} exact component={VariableData} />
              <Route path={"/Envelope"} exact component={Envelope} />
              <Route path={"/Thermal"} exact component={Thermal} />
