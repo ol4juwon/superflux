@@ -363,6 +363,12 @@ flex-direction : column;
          }
         
 }
+@media only screen and (max-width: 320px){
+ .vision{
+     height: 750px;
+ }   
+}
+
 `
 
 export default About;
