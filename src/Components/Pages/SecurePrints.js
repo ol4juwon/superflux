@@ -3,10 +3,10 @@ import styled from 'styled-components'
 import Footer from '../Footer'
 import img1 from "../../assets/images/secure/secure1.png"
 import img2 from "../../assets/images/secure/secure2.png"
-import img3 from "../../assets/images/secure/secure3.png"
-import img4 from "../../assets/images/secure/secure4.png"
+// import img3 from "../../assets/images/secure/secure3.png"
+// import img4 from "../../assets/images/secure/secure4.png"
 // const content = `\"\2022\"`;
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 const SecurePrints = () => {
     return (
         <SecurePrints.Wrapper>

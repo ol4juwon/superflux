@@ -365,7 +365,11 @@ flex-direction : column;
 }
 @media only screen and (max-width: 320px){
  .vision{
-     height: 750px;
+     height: 500px;
+     img{
+         width: 90%;
+         height:100px;
+     }
  }   
 }
 
