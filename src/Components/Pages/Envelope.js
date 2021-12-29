@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Envd from '../../assets/images/env/IMG_9187 1.png'
+import Footer from '../Footer'
 const Envelope = () => {
     return (
         <Envelope.Wrapper>
@@ -21,6 +22,7 @@ const Envelope = () => {
                     </p>
                 </div>
             </div>
+            <Footer />
         </Envelope.Wrapper>
     )
 }
@@ -67,7 +69,39 @@ flex-direction: column;
         }
     }
 }
+@media only screen and (max-width: 600px){
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .env--heading{
+        width: 100%;
+        padding: 40px 0px 0px 0px;
+            h1{
+                font-size: 24px;
+                text-align: center;
+            }
+    }
+    .env--content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .cont--img{
+            width:100%;
+                padding: 0px 0px;
+            img{
+                width: 100%;
+                height: 250px;
+                padding-left: 10px;
+            }
+        }
+        .Text{
+            width: 100%;
+            padding: 20px;
+            text-align: left;
 
+        }
+    }
+}
 `
 
 export default Envelope

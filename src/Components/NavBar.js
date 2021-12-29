@@ -18,7 +18,7 @@ const NavBar = () => {
         </li>
             <li >Our Solutions<i className="fa fa-caret-down"></i>
             <ul>
-            <li><NavLink to="/SecurePrints">Secure Prints</NavLink></li>
+            <li><NavLink to="/SecurePrints">Security Prints</NavLink></li>
             <li><NavLink to="/CommercialPrints">Commercial Print</NavLink></li>
                 <li><NavLink to="/variabledata">Variable Data Print</NavLink></li>
                 <li><NavLink to="/BrandProtection">Brand Protection</NavLink></li>

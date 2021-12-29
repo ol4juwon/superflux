@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
+import Footer from '../Footer';
 const Contact = () => {
     return (
         <Contact.Wrapper>
@@ -27,7 +28,7 @@ const Contact = () => {
                         <div className='form-row'>
                         <div className='inputss'><label htmlFor='first_name'>First Name</label>
                         <input type={"text"} name='first_name'/></div>
-                        <div className='inputss'><label htmlFor='last_name'>Last Name</label>
+                        <div className='inputss col-6'><label htmlFor='last_name'>Last Name</label>
                         <input type={"text"} name='lastName'/></div></div>
                         <div className='form-row'>
                             <div className='inputss'>
@@ -47,17 +48,17 @@ const Contact = () => {
                 </div>
             </div>
             </section>
-            
+            <Footer />
         </Contact.Wrapper>
     );
 }
 
 Contact.Wrapper = styled.div`
-height: 100vh;
+// height: 100vh;
 .content{
     display:flex
     width: 100%;
-    height:600px;
+    // height:600px;
     padding: 100px 0;
     .cont-heading{
         text-align: center;
@@ -154,6 +155,72 @@ height: 100vh;
         }
     }
 
+}
+@media only screen and (max-width: 600px){
+    height: auto;
+    .content{
+        display: flex;
+        flex-direction: column;
+        .sub-cont{
+            width: 100%;
+            // height: 1000px;
+            display:flex;
+            flex-direction: column;
+            // margin-bottom: 40px;
+            // border: 2px solid red;
+            .contact-deets{
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+                h2{
+                    width: 100%;
+                    text-align: center;
+                }
+                div{
+                    width: 100%;
+                    h4{
+                        padding: 10px;
+                    }
+                    p{
+                        padding: 10px;
+                    }
+                }
+            }
+            .contact-form{
+                position: relative;
+                top:0;
+                left: 0;
+                width: 100%;
+                // height: 400px;
+                // margin-bottom: 40px;
+                display: flex;
+                
+             .kontact{
+                 width: 90%;
+                 margin: 0 auto;
+                 button{
+                    font-size: 14px;
+                    padding: 5px 5px;
+                }
+                 .form-row{
+                     width: 100%;
+                     display: flex;
+                     flex-direction: column;
+                     .inputss{
+                         width: 100%;
+                         label{
+                             padding: 10px 0px;
+                         }
+                         input{
+                             height: 60px;
+                             width: 100%;
+                         }
+                     }
+                 }
+             }   
+            }
+        }
+    }
 }
 `
 export default Contact;

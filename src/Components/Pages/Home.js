@@ -436,7 +436,7 @@ background-blend-mode: multiply;
     }
     .blog{
         display: flex;
-        border: 2px solid red;
+        // border: 2px solid red;
         flex-direction: row ;
         height: auto;
         width: 100%;
@@ -449,7 +449,7 @@ background-blend-mode: multiply;
         .text{
             position: relative;
             width:100%;
-            border: 2px solid red;
+            // border: 2px solid red;
             
             display: flex;
             flex-direction: column;

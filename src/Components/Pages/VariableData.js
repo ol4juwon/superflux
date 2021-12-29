@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import VData from '../../assets/images/Variable/IMG_9614 1.png'; 
+import Footer from '../Footer';
 const VariableData = () => {
     return (
         <VariableData.Wrapper>
@@ -24,6 +25,7 @@ const VariableData = () => {
                    
                     </div>
                 </div>
+                <Footer />
         </VariableData.Wrapper> )
 }
 
@@ -81,6 +83,47 @@ flex-direction: column;
             }
         }
     }
+    }
+    @media only screen and (max-width: 600px){
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        .variable--heading{
+            width: 100%;
+            padding: 20px 0px;
+            display: flex;
+            h1{font-size:24px;
+            width: 100%;
+            text-align: center;
+        }}
+        .variable--content{
+            display: flex;
+            flex-direction: column;
+            // border: 2px solid red;
+            width: 100%;
+            .img{
+                width: 100%;;
+                // height:372px;
+                justify-self: center;
+                // border: 2px solid green;
+                img{
+                padding-right: 0px !important;
+                width: 414px;
+                height: 250px;
+                }
+                // height: 100%;
+            }
+            .vcontent{
+                width: 100%;
+                font-size: 16px;
+                line-height: 28px;
+                color: #011166;
+                p{
+                    padding: 15px;
+                    text-align: left;
+                }
+            }
+        }
     }
 `
 export default VariableData;
