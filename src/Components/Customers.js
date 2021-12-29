@@ -80,6 +80,20 @@ width:100%;
 @media only screen and (max-width: 600px){
     width: 100%;
     overflow: hidden;
+    .customers--heading{
+        display: flex;
+        width: 100%;
+        // border:2px solid red;
+            h2{
+                margin: 0 auto;
+                padding: 20px 10px;
+                font-size: 24px;
+                line-height: 32px;
+                color: #011166;
+                text-align: center;
+            }
+
+}
     .customers--slides{
         width: 100%;
         // border: 2px solid red;

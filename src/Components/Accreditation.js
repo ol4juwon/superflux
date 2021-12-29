@@ -122,7 +122,6 @@ flex-direction: column;
     .accred-image{
         display: flex;
         flex-direction: column;
-        border: 2px solid red;
         div{
             width: 300px;
             margin: 20px 20px;

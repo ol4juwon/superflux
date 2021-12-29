@@ -71,14 +71,14 @@ const Home = () => {
                        <div className='text'>
                             <h1>Superflux International <br/>Limi<span className="underline">ted</span></h1>
                             <p>Superflux International Limited is the leading secure, commercial and variable data prints solution provider to over 135 clients in various sectors.
-<br />Our goal is to always exceed customers’ expectations by providing premium quality products and services following international best practices and stringent security controls. We provide a wide array of specialized print services for discerning and quality-conscious clientele base and has continued to enjoy great commendation and patronage from our customers.
+<br />Our goal is to always exceed customers' expectations by providing premium quality products and services following international best practices and stringent security controls. We provide a wide array of specialized print services for discerning and quality-conscious clientele base and has continued to enjoy great commendation and patronage from our customers.
 <br />Our operations and activities are guided by the principles of quality, integrity, dependability, confidentiality, teamwork and high ethical standard.
                             </p>
                         </div>
                         <div className='image'>
                              <img className='bottom' src={Group1} alt=''/>
                              <img className='top' src={Group2} alt=''/> 
-                         <div className='cls3'></div>  
+                         {/* <div className='cls3'></div>   */}
                         </div>
                       
                         
@@ -394,28 +394,7 @@ background-blend-mode: multiply;
                     display: flex;
                     flex-direction: column reverse;
                 }
-                .image{
-                    display: none;
-                    .bottom{
-                        display:none;
-
-                    }
-                    .top{display: none;}
-                }
-            
-                    .cls3{
-                        position: absolute;
-                        bottom:-30px;
-                        background: white;
-                        right:10px;
-                        height:230px;
-                        border-radius: 5px;
-                        width:370px;
-                        b0x-shadow:  0 30px 50px 0 rgba(28,102,254,0.4);
-                        z-index:9;
-                    }
-                }
-              
+               
              }
              .platform{
                  display: flex;
@@ -442,56 +421,64 @@ background-blend-mode: multiply;
         width: 100%;
     }
     .introduction{
+        position: relative;
         width: 100%;
+        padding:0px;
+        box-size: border-box;
         background: #fff;
         display: flex;
-        flex-direction: column-reverse ;
+        flex-direction: column !important ;
         .text{
-            position: relative;
+        //     position: relative;
             width:100%;
-            // border: 2px solid red;
+        //     // height: auto;
+        //     // border: 2px solid red;
+        //     top: 300px;
             
             display: flex;
             flex-direction: column;
-            h1{
-                width: 100%;
-                font-size:24px;
-                line-height: 32px;
-                margin: 0 auto;
-                text-align: center;
-            }
-            p{
-                padding: 20px;
-                font-size: 14px;
-                text-align: center;
-                color: #011166;
-                line-height: 27px;
-            }
+        //     h1{
+        //         width: 100%;
+        //         font-size:24px;
+        //         line-height: 32px;
+        //         margin: 0 auto;
+        //         text-align: center;
+        //     }
+        //     p{
+        //         padding: 20px;
+        //         font-size: 14px;
+        //         text-align: center;
+        //         color: #011166;
+        //         line-height: 27px;
+        //     }
         }
         .image{
-            positon: relative;
-            border: 2px solid brown;
-            height: 300px;
-            blend: pass-through;
+            width: 100%;
+        //     positon: absolute;
+        //     // border: 2px solid green;
+        //     // height: auto;
+        //     // height: 300px;
+        //     // blend: pass-through;
             .top{
-                position: relative;
-                top: 100px;
-                left: -100px;
+                // position: absolute;
+                top: 150px;
+                left: 140px;
                 width: 160px;
                 height: 140px;
                 filter: drop-shadow(0px 30px 50px rgba(26, 102, 254, 0.16));
-                z-index: 2;
+                // z-index: 2;
             }
             .bottom{
-                position: relative;
-                top: 50px;
-                left: 50px;
+        //         position: absolute;
+        //         top: 50px;
+        //         // left: 50px;
                 width: 240px;
                 height: 200px;
             }
         }
     }
     .solutions{
+        postion: relative;
                 .Text{
                     h3{
                         padding-top:  12px;

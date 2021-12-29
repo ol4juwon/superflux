@@ -92,8 +92,14 @@ const NavBar = () => {
 
 NavBar.Wrapper = styled.div`
 .navbar-nav{
-padding-right: 150px;
+// padding-right: 150px;
 }
+.navbar-collapse{
+  width: 100%;
+  text-align: right;
+}
+
+
 // height: 100px;
 @media only screen and (max-width: 600px) {
  nav{
@@ -104,6 +110,9 @@ padding-right: 150px;
     width: 200px;
     height: 100px;
   }
+}
+.nav-item{
+border-bottom: 1px solid #1A66FE;
 }
 }
 
