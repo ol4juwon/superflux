@@ -135,14 +135,15 @@ SecurePrints.Wrapper = styled.div`
             h3{ 
                 text-decoration: underline;
                 color: #1A66FE;
+                padding: 10px 20px;
             }
             p{
                 ul{
                     color:#011166;
                     // background: green;
-                    list-style: none;
+                    list-style: disc;
                     // display: list-item;
-                    margin-left: 1em;
+                    margin-left: 3em;
                 }
                 ul li::before{
                     color: #1A66FE;
@@ -197,11 +198,15 @@ SecurePrints.Wrapper = styled.div`
             .secure1, .secure3, .secure5{
                 ul li{
                     list-style-type: disc;
-                    color: #1A66FE;
+                    // color: #1A66FE;
                     margin-left: 65px;
                     display: list-item;
                     list-style-position: inside;
                 }
+                ul li::before{
+                    color: #1A66FE;
+                }
+
             }
             .secure2, .secure4{
                 ul li{
