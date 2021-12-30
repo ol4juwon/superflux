@@ -94,6 +94,8 @@ Thermal.Wrapper = styled.div`
         img{
             padding-left: 10px;
              margin: 0 auto;
+             width: 400px;
+             height: 250px;
         }
         p{
             padding: 20px;

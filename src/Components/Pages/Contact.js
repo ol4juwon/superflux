@@ -28,7 +28,7 @@ const Contact = () => {
                         <div className='form-row'>
                         <div className='inputss'><label htmlFor='first_name'>First Name</label>
                         <input type={"text"} name='first_name'/></div>
-                        <div className='inputss col-6'><label htmlFor='last_name'>Last Name</label>
+                        <div className='inputss'><label htmlFor='last_name'>Last Name</label>
                         <input type={"text"} name='lastName'/></div></div>
                         <div className='form-row'>
                             <div className='inputss'>
@@ -38,7 +38,7 @@ const Contact = () => {
                         </div>
                         <div className='form-row'>
                             <div className='inputss'><label htmlFor='message'>Message</label>
-                            <input type={"text"} name='message' />
+                            <textarea rows={"6"}></textarea>
                             </div>
                         </div>
                         <div>
@@ -141,7 +141,13 @@ Contact.Wrapper = styled.div`
                             outline: 0;
                             height: 60px;
                         }
-                        
+                        textarea{
+                            border: 0;
+                            outline: 0;
+                            background: #F4F8FC;
+                            scroll-behavior: smooth;
+                            resize: none;
+                        }
                         flex-direction: column ;
                         padding: 0 10px;
                         justify-content: space-between;
