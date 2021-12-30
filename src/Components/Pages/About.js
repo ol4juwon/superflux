@@ -337,7 +337,7 @@ background-size: cover ;
             text-align: center;
         }
 }
-@media only screen and (min-width: 600px){
+@media only screen and ( max-width: 600px){
     width: 100%;
     height: auto;
     display:flex;
