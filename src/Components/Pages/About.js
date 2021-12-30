@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import GROUP273 from "../../assets/images/about/Group 273.png";
 import Highlight from "./../../assets/images/about/abouthighlight.png"
 import visionImg from "../../assets/images/vision/vision.png"
 import target from "../../assets/images/vision/target.png"
@@ -14,6 +15,7 @@ import openImg from "../../assets/images/vision/openness.png"
 import squadImg from "../../assets/images/vision/squad.png"
 import welfareImg from "../../assets/images/vision/welfare.png"
 import trainingImg from "../../assets/images/vision/staff training.png"
+import GROUP2 from "../../assets/images/about/Group 2.png"
 
 import Footer from "../Footer"
 const About = () => {
@@ -80,7 +82,7 @@ const About = () => {
             <section className='leading'>
                 <div className='leading--text'>
                     <div><h3>The leading <span>secure</span>, <span>commercial</span> and <span>variable data</span> prints solution
-                        provider</h3></div>
+                        provider.</h3></div>
                     <div>
                         <p>Superflux was incorporated as a limited liability Company in the year 1995. In 1998, the Company commenced full operations in the marketing of security print products in Nigeria.  In line with the Central Bank of Nigeria’s directive for security printing companies to establish printing facilities in Nigeria by December 2007, our state of the art security printing facility, located in Lagos was commissioned in 2006.
                             <br />
@@ -88,7 +90,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className='leading--img'>
-
+                    <img src={GROUP2} alt="about superflux" className='fluid' />
                 </div>
             </section>
             <section className='vision'>
@@ -125,14 +127,17 @@ const About = () => {
                 </div>
             </section>
             <section className='quality--statement'>
+                <div className='quality--img'>
                 <div>
                     <h1>Quality Statem<span className='underline'>ent</span></h1>
                 </div>
                 <div>
                     <p>Superflux International limited, in pursuance of its existing strategic direction is committed to providing secure, variable data and commercial print solutions that conform to relevant stakeholders' requirements. 
 To achieve this, our operations and processes are continually reviewed and improved upon to ensure customer satisfaction.
-
+<br/>
+<br/>
 The organization is dedicated to establishing and maintaining a documented quality management system (QMS) as a means of ensuring that our products and services are in line with the requirements of the ISO 9001:2015 standard.</p>
+                </div>
                 </div>
             </section>
             <Footer />
@@ -164,16 +169,166 @@ flex-direction : column;
     // height: 400px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+    // border: 2px solid red;
     .leading--text{
         // border: 2px solid red;
         width: 50%;
         display: flex;
-        oadding: 20px;
+        flex-direction: column;
+        padding: 20px;
         flex- direction: row;
         div{
             width: 100%;
         }
+        h3{
+            font-size: 32px;
+            line-height: 44px;
+            font-family: 'Poppins', sans-serif;
+            padding: 50px 80px;
+            font-weight: 600;
+            span{
+                color:#1A66FE;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 24px;
+            font-family: 'Poppins', sans-serif;
+            padding: 0 80px;
+        }
     }
+    .leading--img{
+        width:50%;
+    }
+}
+.vision{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    .vis-img{
+        position:absolute;
+        width: 50%;
+        // margin-top: 40px;
+        // border: 2px solid red;
+        img{
+            width: 735px;
+            height: 500px;
+        }
+    }
+    .tablet--sec{
+        position:absolute;
+        width: 60%;
+        height:400px;
+        margin-top: 50px;
+        right: 0;
+        top: 0;
+        color: white;
+        padding: 40px;
+        padding-left:150px;
+        background: #1A66FE;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        h1{
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 40px;
+            padding: 10px 5px 10px 5px;
+        }
+        p{
+            text-align: start;
+            font-size: 15px;
+            line-height: 190%;
+        }
+        span{
+            width: 100%;
+            margin: 0 auto;
+            justify-content: start;
+            display: flex;
+            img{
+                padding-top: 10px;
+                margin-right: 5px;
+                width: 32px;
+                height: 42px;
+                justify-content: center;
+            }
+        }
+    }
+}
+.our--values{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .Val--heading{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 32px;
+            line-height: 52px;
+            font-weight: 600;
+            color: #011166;
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    .val--content{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // justify-content: start;
+        margin: 0 auto;
+        padding-left: 100px;
+        .val--item{
+            width: 22%;
+            // display: flex;
+            border: 1px solid rgba(1,17,102,0.2);
+            padding: 20px;
+            box-sizing: border-box;
+            /* try-w */
+
+            box-shadow: 0px 4px 16px rgba(144, 153, 200, 0.24);
+            border-radius: 16px;
+            margin: 10px;
+        }
+    }
+}
+.quality--statement{
+    margin-top: 50px;
+    width: 100%;
+    height: 630px;
+    padding-top: 100px;
+    background: #F4F8FC;
+    .quality--img{
+        width: 60%;
+        height: 430px;
+        background: url(${GROUP273}),  no-repeat;
+        background-attachment:cover;
+background-size: cover ;
+        margin: auto auto;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
+        border-radius: 32px;
+        h1{
+            padding-top: 60px;
+            text-align: center;
+            font-size: 32px;
+            line-height: 40px;
+            width: 100%;
+        }
+        p{
+            padding-top: 20px;
+            font-family: "SF Pro Text";
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 100px;
+            padding-right: 100px;
+            text-align: center;
+        }
 }
 @media only screen and (max-width: 600px){
     width: 100%;

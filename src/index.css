@@ -1,10 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap'); */
+/* @import url("../src/assets/fonts/San-Francisco/SF-Pro-Display-Black.otf"); */
+/* @import url("../src/assets/fonts/San-Francisco/SF-Pro-Text-Bold.otf"); */
+/* @import url("../src/assets/fonts/San-Francisco/SF-Pro-Text-Regular.otf"); */
+/* @import url("../src/assets/fonts/San-Francisco/SF-Pro-Text-Semibold.otf"); */
+/* @import url("../src/assets/fonts/San-Francisco/SF-Pro-Text-Thin.otf"); */
+/* @import url("../src/assets/fonts/San-Francisco/SF-Pro-Text-Medium.otf"); */
+@font-face{
+font-family: "SF-Pro-Text-Bold";
+src: url("../src/assets/fonts/San-Francisco/SF-Pro-Text-Bold.otf") format("opentype");
+}
+@font-face{
+font-family: "Playfair Display";
+src: url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,600&family=Poppins:ital,wght@0,200;0,300;1,200&display=swap") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("../src/assets/fonts/San-Francisco/SF-Pro-Text-Regular.otf") format("opentype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 html {
   min-height:100%;
@@ -19,5 +37,6 @@ html {
 }
 .underline{
   border-bottom: 6px solid #1A66FE;
+  font-family: "SF-Pro-Display-Black", sans-serif;
   ;
 }

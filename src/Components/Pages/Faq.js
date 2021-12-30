@@ -6,11 +6,11 @@ const Faq = () => {
     const faqs = [
             {         
             question:"What Does NICPAS Stand For ?",
-            answer:""
+            answer:"Nigeria Cheque Printers Accreditation Scheme."
             },
             {
                 question:"Are you a certified cheque Printer?",
-                answer:""
+                answer:"Nigeria Cheque Printers Accreditation Scheme."
             },
             {
                 question:"What Does MICR Stand For?",
@@ -209,18 +209,18 @@ a:hover,a:focus{
     background: #fff;
     position: relative;
 }
-#accordion .panel-heading:before{
-    // content: "";
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
-    background: #fff;
-    border: 1px solid #550527;
-    position: absolute;
-    top: 50%;
-    left: -48px;
-    transform: translateY(-50%);
-}
+// #accordion .panel-heading:before{
+//     content: "";
+//     width: 15px;
+//     height: 15px;
+//     border-radius: 50px;
+//     background: #fff;
+//     border: 1px solid #550527;
+//     position: absolute;
+//     top: 50%;
+//     left: -48px;
+//     transform: translateY(-50%);
+// }
 #accordion .panel-title a{
     display: block;
     padding: 15px 55px 15px 30px;
@@ -240,7 +240,7 @@ text-align: left;
 #accordion .panel-title a:before,
 #accordion .panel-title a.collapsed:before{
     content: "\f068";
-    font-family: "Font Awesome 5 Free";
+    // font-family: "Font Awesome 5 Free";
     font-weight: 900;
     width: 25px;
     height: 25px;
