@@ -307,38 +307,42 @@ flex-direction : column;
         }
     }
 }
-// .quality--statement{
-//     margin-top: 50px;
-//     width: 100%;
-//     height: 630px;
-//     padding-top: 100px;
-//     background: #F4F8FC;
-//     .quality--img{
-//         width: 60%;
-//         height: 430px;
+.quality--statement{
+    margin-top: 50px;
+    width: 100%;
+    height: 630px;
+    padding-top: 100px;
+    color: white;
+    background: #F4F8FC;
+    .quality--img{
+        width: 60%;
+        padding: 50px;
+        background:#1A66FE;
+        // height: 430px;
 //         background: url(${GROUP273}),  no-repeat;
 //         background-attachment:cover;
 //         background-size: cover ;
-//         margin: auto auto;
-//         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
-//         border-radius: 32px;
-//         h1{
-//             padding-top: 60px;
-//             text-align: center;
-//             font-size: 32px;
-//             line-height: 40px;
-//             width: 100%;
-//         }
-//         p{
+        margin: auto auto;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);
+        border-radius: 32px;
+        h1{
+            // padding-top: 60px;
+            text-align: center;
+            font-size: 32px;
+            line-height: 40px;
+            width: 100%;
+        }
+        p{
 //             padding-top: 20px;
-//             font-family: "SF Pro Text";
-//             font-size: 16px;
-//             line-height: 24px;
+            font-family: "SF Pro Text";
+            font-size: 16px;
+            line-height: 24px;
+            font-style: regular;
 //             padding-left: 100px;
 //             padding-right: 100px;
-//             text-align: center;
-//         }
-}
+            text-align: center;
+        }
+}}
 @media only screen and ( max-width: 600px){
     width: 100%;
     height: auto;
@@ -470,10 +474,13 @@ flex-direction : column;
         }
     }
     .quality--statement{
+        position: relative;
         background: #F4F8FC;
+        height: auto;
         width: 100%;
         padding: 100px 0px;
         .quality--img{
+            position: relative;
             width: 80%;
             background: #1A66FE;
             box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.24);

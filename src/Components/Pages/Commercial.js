@@ -153,6 +153,13 @@ Commercial.Wrapper = styled.div`
         }
     }
     @media only screen and (max-width: 600px){
+        .secure--heading{
+
+            img{
+                width: 400px;
+                height: 250px;
+            }
+        }
         .embedded {
             h3{ 
                 text-decoration: underline;

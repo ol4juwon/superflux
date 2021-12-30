@@ -40,11 +40,11 @@ const NavBar = () => {
            </div>
       </li> 
       <li className="nav-item dropdown">
-        <NavLink className="nav-link dropdown-toggle" to="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <NavLink className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Blog/Media
         </NavLink>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          <NavLink className="dropdown-item" to="/">Blog</NavLink>
+          <NavLink className="dropdown-item" to="/blog">Blog</NavLink>
           <NavLink className="dropdown-item" to="/gallery">Gallery</NavLink>
            </div>
       </li> 
