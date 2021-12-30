@@ -15,7 +15,7 @@ import Thermal from './Components/Pages/Thermal';
 import Brands from './Components/Pages/Brands';
 import SecurePrints from './Components/Pages/SecurePrints';
 import News from './Components/Pages/News';
-// import Commercial from './Components/Pages/Commercial';
+import Commercial from './Components/Pages/Commercial';
 
 import Envelope from './Components/Pages/Envelope';
 import Gallery from './Components/Pages/Gallery';
@@ -36,6 +36,7 @@ function App() {
              <Route path={"/Blog"} exact component={Blog} />
              <Route path={"/gallery"} exact component={Gallery} />
              <Route path={"/VariableData"} exact component={VariableData} />
+             <Route path={"/commercialPrints"} exact component={Commercial} />
              <Route path={"/Envelope"} exact component={Envelope} />
              <Route path={"/Thermal"} exact component={Thermal} />
              <Route path={"/Brands"} exact component={Brands} />

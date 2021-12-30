@@ -1,13 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import Footer from '../Footer'
-import img1 from "../../assets/images/secure/secure1.png"
-import img2 from "../../assets/images/secure/secure2.png"
-import img3 from "../../assets/images/secure/secure3.png"
-import img4 from "../../assets/images/secure/secure4.png"
-import img5 from "../../assets/images/secure/secure5.png"
-import img6 from "../../assets/images/secure/Group 1.png"
-import img7 from "../../assets/images/secure/Group 4.png"
+import img1 from "../../assets/images/thermal/thermal1.png"
+import img2 from "../../assets/images/thermal/thermal2.png"
+import img3 from "../../assets/images/thermal/thermal3.png"
 const Thermal = () => {
     return (
         <Thermal.Wrapper>
@@ -37,7 +33,7 @@ const Thermal = () => {
             </div> */}
             <div className='secure--Types'>
                 <div className='secure1'>
-                    <img src={img3} alt='' />
+                    <img src={img2} alt='' />
                     <div className='secureNums'>
                         <h3>Benefits of customised rolls</h3>
                     </div>
@@ -52,7 +48,7 @@ const Thermal = () => {
                     </ul>
                 </div>
                 <div className='secure2' >
-                    <img src={img4} alt="" />
+                    <img src={img3} alt="" />
                     <div className='secureNums'>
                         <h3>Our range of products</h3>
                     </div>
@@ -85,6 +81,7 @@ Thermal.Wrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+   
     .secure--heading{
         width: 100%;
         color: #011166;
@@ -129,6 +126,10 @@ Thermal.Wrapper = styled.div`
         .secure--Types{
              .secure1,.secure3, .secure5{
                  background:#F4F8FC;
+                 img{
+                    width: 400px;
+                    height: 400px;
+                }
                 .secureNums{
                 width: 100%;
                 display: flex;
@@ -137,9 +138,14 @@ Thermal.Wrapper = styled.div`
                         padding: 10px 20px;
                         color: #1A66FE;
                     }
+                    
                 }
             }
             .secure2, .secure4{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
                 .secureNums{
                     width: 100%;
                     display: flex;
