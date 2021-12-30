@@ -75,7 +75,7 @@ const About = () => {
 
     return (
         <About.Wrapper>
-            <section className='about--img'>
+            <section className='about--img .img-fluid'>
                 <img src={Highlight} alt="about superflux" className='fluid' />
 
             </section>
@@ -84,12 +84,12 @@ const About = () => {
                     <div><h3>The leading <span>secure</span>, <span>commercial</span> and <span>variable data</span> prints solution
                         provider.</h3></div>
                     <div>
-                        <p>Superflux was incorporated as a limited liability Company in the year 1995. In 1998, the Company commenced full operations in the marketing of security print products in Nigeria.  In line with the Central Bank of Nigeria’s directive for security printing companies to establish printing facilities in Nigeria by December 2007, our state of the art security printing facility, located in Lagos was commissioned in 2006.
+                        <p>Superflux was incorporated as a limited liability Company in the year 1995. In 1998, the Company commenced full operations in the marketing of security print products in Nigeria.  In line with the Central Bank of Nigeria's directive for security printing companies to establish printing facilities in Nigeria by December 2007, our state of the art security printing facility, located in Lagos was commissioned in 2006.
                             <br />
                             We commenced commercial printing services in 2008. Cheque outsourcing, our innovative solutions to financial institutions commenced in 2009. We expanded our factory in response to the needs of our clients and it was commissioned in 2011. We have evolved from a 2-man trading company at inception to over 300 employees in a purpose built ultra-modern manufacturing facility in Nigeria.</p>
                     </div>
                 </div>
-                <div className='leading--img'>
+                <div className='leading--img d-none d-md-block'>
                     <img src={GROUP2} alt="about superflux" className='fluid' />
                 </div>
             </section>
@@ -178,7 +178,7 @@ flex-direction : column;
         display: flex;
         flex-direction: column;
         padding: 20px;
-        flex- direction: row;
+        // flex-direction: row;
         div{
             width: 100%;
         }
@@ -337,7 +337,7 @@ background-size: cover ;
             text-align: center;
         }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 600px){
     width: 100%;
     height: auto;
     display:flex;
@@ -347,10 +347,16 @@ background-size: cover ;
         flex-direction: column;
         width: 100%;
         margin-bottom: 20px;
+        div{
+            width: 100%;
+        }
+        
         .leading--text{
-            width:100%; 
+            width:100% !important; 
             display: flex;
             flex-direction: column;
+            border: 2px solid red;
+            padding: 2px;
             h3{
                 padding: 50px 0px;
                 width: 70%;
@@ -374,9 +380,7 @@ background-size: cover ;
             }
         }
     }
-        .leading--img{
-            display: none;
-        }
+        
         .vision{
            position: relative;
            width: 100%;
