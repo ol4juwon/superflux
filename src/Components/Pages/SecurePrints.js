@@ -15,8 +15,7 @@ const SecurePrints = () => {
                 <h1>Security pri<span className='underline'>nts</span></h1>
                 <img src={img1} alt="" />
                 <p>Superflux has over 22 years' experience in printing security documents including cheques, certificates, stamps, ballot papers, revenue receipts, vehicle licenses and other identity documents.
-
-We ensure that your product and its authenticity can be indisputably trusted. This goal is achieved using innovative and sophisticated security printing solutions that enable us to embed a wide range of covert and overt security features that prevent the fraudulent reproduction or alteration of your sensitive and value documents.</p>
+                    We ensure that your product and its authenticity can be indisputably trusted. This goal is achieved using innovative and sophisticated security printing solutions that enable us to embed a wide range of covert and overt security features that prevent the fraudulent reproduction or alteration of your sensitive and value documents.</p>
             </div>
             <div className='embedded'>
                 <h3>Some of the security features embedded in our documents include:</h3>
