@@ -58,14 +58,14 @@ const Home = () => {
                    Leading <span className='Loop'>Security &amp; <br />Commercial </span>Print Company
                </h1>
                <p>
-               Your one-stop security, commercial and variable<br/>data print shop.
+               Your one-stop security, commercial and variable data print shop.
                </p>
                <button className='rMore'>
                    Read More
                    </button>
             </div>
             
-            <div className='outerBound'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div>
+            {/* <div className='outerBound'>   <img className='outerBound' src={OUTERBOUND} alt=''/></div> */}
             <div className='introduction'>
                  
                        <div className='text'>
@@ -77,7 +77,7 @@ const Home = () => {
                         </div>
                         <div className='image'>
                              <img className='bottom' src={Group1} alt=''/>
-                             <img className='top' src={Group2} alt=''/> 
+                             {/* <img className='top' src={Group2} alt=''/>  */}
                          {/* <div className='cls3'></div>   */}
                         </div>
                       
@@ -144,8 +144,9 @@ background-blend-mode: multiply;
         display: flex;
         flex-direction: column;
         width: 50%;
-        height:600px;
+        // height:600px;
         padding-top: 200px;
+        padding-bottom: 200px;
         padding-left: 100px;
         p{
             line-height: 26px;
@@ -198,11 +199,12 @@ background-blend-mode: multiply;
         height: 700px;
         display: flex;
         flex-direction: row no-wrap;
+        border: 1px solid red;
         color: #011166;
         .text{
             width: 50%;
             padding-left: 100px;
-            padding-top: 100px;
+            // padding-top: 100px;
             h1{
                 font-size: 2.5rem;
                 font-weight: bold;
@@ -215,43 +217,8 @@ background-blend-mode: multiply;
             }
         }
         .image{
-            position:absolute;
-            width: 50%;
-            height: 500px;
-            justify-content: end;
-            right:0px;
-            .top{
-                position: absolute;
-                bottom:-130px;
-                width:418px;
-                height:338px;
-                img{
-                box-shadow: 0 20px 20px 0 rgb(223,221,123);
-                }
-                right:0;
-                z-index:10;
-            }
-            .bottom{
-                position: absolute;
-                right: 126px;
-                bottom:-60px;
-                border-radius:5px;
-                z-index:7;
-                width: 602px;
-                height: 500px;
-                
-            }
-        //     .cls3{
-        //         position: absolute;
-        //         bottom:-30px;
-        //         background: white;
-        //         right:10px;
-        //         height:230px;
-        //         border-radius: 5px;
-        //         width:370px;
-        //         b0x-shadow:  0 30px 50px 0 rgba(28,102,254,0.4);
-        //         z-index:9;
-        //     }
+           
+            
         }
       
      }
@@ -335,83 +302,35 @@ background-blend-mode: multiply;
     }
 
 
-    @media only screen and (max-width: 420px){
-        .Loop{
-            font-size: 24px;
-            line-height: 24px;
-            font-weight: 300;
-        }
-        .testimonials{
-            height: auto;
-            flex-direction: column-reverse;
-        }
-        .solutions{
-            .slides{
-                width: 100%;
-                // border: 2px solid red;
-            }
-        }
-        .cta{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding-left: 5px;
-            padding-top: 100px;
-            h1{
-                font-size: 26px;
-                text-align:center;
-                line-height: 40px;
-                font-weight: 700;   
-                padding-top:40px
-            }
-            p{
-                padding-top: 40px;
-                text-align: center;
-                margin: 0 auto;
-                line-height: 30.4px;
-            }
-            .rMore{
-                margin-top: 40px;
-                	    justify-self: center;
-                        text-align: center;
-                        margin: 0 auto;
-            }
-            // .solutions{
-            //     position: relative;
-            //     display: none;
-            //     visibility: none;
-            // }
-            .introduction{
-                 display: flex;
-                flex-direction: column reverse;
-                width: 100%;
-                // background-color: #E5E5E5;
-                background:red;
-                height: auto;
-               
-                color: #011166;
-                div{
-                    display: flex;
-                    flex-direction: column reverse;
-                }
-               
-             }
-             .platform{
-                 display: flex;
-                 flex-direction: column;
-                
-                //  padding: 0;
-             }
-             .blog{
-                 display: flex;
-                 flex-direction: row nowrap;
-                 height: auto;
-                 width: 100%;
-             }
-    }
+  
 @media only screen and (max-width: 728px){
     body{
         width: 100%;
+    }
+    .cta{
+        width: 100%;
+        height: auto;
+        padding-top: 120px;
+        padding-left: 40px;
+        padding-bottom: 280px;
+        border: 1px solid red;
+        h1{
+            text-align: center;
+            font-size: 26px;
+            line-height: 40px;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+            background-color: #1A66FE;
+            margin: 0 auto;
+        }
     }
     .blog{
         display: flex;
@@ -421,59 +340,38 @@ background-blend-mode: multiply;
         width: 100%;
     }
     .introduction{
-        position: relative;
+      position: relative;
+      display: flex;
+        flex-direction: column-reverse;
         width: 100%;
-        padding:0px;
-        box-size: border-box;
-        background: #fff;
-        display: flex;
-        flex-direction: column !important ;
+        height: auto;
+        padding-top: 30px;
+        img{
+            width: 90%;
+            height: auto;
+            margin: 0 10%;
+
+        }
         .text{
-        //     position: relative;
-            width:100%;
-        //     // height: auto;
-        //     // border: 2px solid red;
-        //     top: 300px;
-            
+            width: 100%;
+            padding-left: 10px;
+            padding-top: 10px;
             display: flex;
             flex-direction: column;
-        //     h1{
-        //         width: 100%;
-        //         font-size:24px;
-        //         line-height: 32px;
-        //         margin: 0 auto;
-        //         text-align: center;
-        //     }
-        //     p{
-        //         padding: 20px;
-        //         font-size: 14px;
-        //         text-align: center;
-        //         color: #011166;
-        //         line-height: 27px;
-        //     }
-        }
-        .image{
-            width: 100%;
-        //     positon: absolute;
-        //     // border: 2px solid green;
-        //     // height: auto;
-        //     // height: 300px;
-        //     // blend: pass-through;
-            .top{
-                // position: absolute;
-                top: 150px;
-                left: 140px;
-                width: 160px;
-                height: 140px;
-                filter: drop-shadow(0px 30px 50px rgba(26, 102, 254, 0.16));
-                // z-index: 2;
+            h1{
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 600;
+                text-align: center;
+                font-family: Poppins;
             }
-            .bottom{
-        //         position: absolute;
-        //         top: 50px;
-        //         // left: 50px;
-                width: 240px;
-                height: 200px;
+            p{
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+                font-family: "SF Pro Text";
+                padding: 20px;
+
             }
         }
     }

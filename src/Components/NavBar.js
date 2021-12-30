@@ -88,7 +88,7 @@ NavBar.Wrapper = styled.div`
 .navbar-brand{
   img{
     width: 200px;
-    height: 100px;
+    height: 80px;
   }
 } 
 

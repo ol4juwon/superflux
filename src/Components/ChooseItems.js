@@ -19,7 +19,7 @@ width: 290px;
 height: 150px;
 border-radius: 4px;
 // border: 1px solid #E5E5E5;
-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 16px rgba(144, 153, 200, 0.24);
 background-color: #fff;
 margin:5px;
 div{
