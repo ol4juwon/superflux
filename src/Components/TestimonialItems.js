@@ -21,7 +21,7 @@ const Testimonialitems = (props) => {
 }
 Testimonialitems.Wrapper = styled.div`
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-height: 400px;
+// height: 400px;
 //   transition: 0.3s;
   margin: 0 40px;
   margin-bottom: 10px;
@@ -54,7 +54,7 @@ height: 400px;
         p{
             font-size:12px;
             line-height: 20px;
-            height: 100px;
+            // height: 100px;
             overflow:  scroll;
             ::-webkit-scrollbar {
                 display: none;

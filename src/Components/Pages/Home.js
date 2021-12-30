@@ -8,7 +8,6 @@ import HARDCOVER from '../../assets/images/hardcover.png'
 import Envelope from '../../assets/images/env/IMG_9187 1.png'
 import VARIABLEPRINT from '../../assets/images/superflux/variable.png'
 import THERMAL from '../../assets/images/superflux/thermal.png'
-import Group2 from '../../assets/images/Rectangle 177.png'
 import Solutions from '../Solutions';
 import Blog from '../Blog';
 import Choose from '../Choose';
@@ -196,10 +195,12 @@ background-blend-mode: multiply;
     .introduction{
         width: 100%;
         background-color: #E5E5E5;
-        height: 700px;
+        // height: 700px;
         display: flex;
+        padding-top: 100px;
+        padding-bottom: 100px;
         flex-direction: row no-wrap;
-        border: 1px solid red;
+        // border: 1px solid red;
         color: #011166;
         .text{
             width: 50%;
@@ -217,8 +218,14 @@ background-blend-mode: multiply;
             }
         }
         .image{
-           
             
+           
+            img{
+                // position: absolute;
+                // border: 1px solid green;
+                // right: -10px;
+                // padding-right: 0;
+            }
         }
       
      }
@@ -313,7 +320,7 @@ background-blend-mode: multiply;
         padding-top: 120px;
         padding-left: 40px;
         padding-bottom: 280px;
-        border: 1px solid red;
+        // border: 1px solid red;
         h1{
             text-align: center;
             font-size: 26px;

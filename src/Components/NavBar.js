@@ -1,4 +1,5 @@
-import Logo from "../assets/images/Group 53.png"
+import Logo from "../assets/images/Group 10.png"
+import LogoBrand from "../assets/images/firefox1.png"
 import styled from 'styled-components';
 import BACKGROUND from '../assets/images/background.png';
 import { NavLink } from "react-router-dom";
@@ -6,7 +7,7 @@ const NavBar = () => {
   return (
     <NavBar.Wrapper>
       <nav className="navbar navbar-expand-lg navbar-light ">
-       <NavLink className="navbar-brand" to="/" > <img src={Logo} alt='' /></NavLink>
+       <NavLink className="navbar-brand" to="/" > <img className="logoo" src={Logo} alt='' /> <img className="lo--go" src={LogoBrand} alt="" /></NavLink>
   <button className="navbar-toggler" type="icon" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -35,7 +36,7 @@ const NavBar = () => {
           <NavLink className="dropdown-item" to="/CommercialPrints">Commercial Print</NavLink>
           <NavLink className="dropdown-item" to="/envelope">Envelope Production</NavLink>
           <NavLink className="dropdown-item" to="/variabledata">Variable Data Printing</NavLink>
-          <NavLink className="dropdown-item" to="/Thermal">Thermal/POS roll Production</NavLink>
+          <NavLink className="dropdown-item" to="/Thermal">Thermal/POS Roll Production</NavLink>
            </div>
       </li> 
       <li className="nav-item dropdown">
@@ -85,11 +86,21 @@ NavBar.Wrapper = styled.div`
     direction: rtl;
   }
 }
+.logoo{
+  width: 100px;
+  height: 100px;
+}
 .navbar-brand{
-  img{
-    width: 200px;
-    height: 80px;
+  .logoo{
+    width: 56px;
+    height: 56px;
   }
+  .lo--go{
+    width: 130px;
+    height: 30px;
+
+  }
+  
 } 
 
 }
