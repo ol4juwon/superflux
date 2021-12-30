@@ -201,10 +201,16 @@ flex-direction : column;
     }
     .leading--img{
         width:50%;
+        img{
+            position: absolute;
+            margin-top: 50px;
+            right: 0;
+        }
     }
 }
 .vision{
     position: relative;
+    margin-top: 200px;
     width: 100%;
     height: 500px;
     display: flex;
@@ -260,6 +266,7 @@ flex-direction : column;
 }
 .our--values{
     width: 100%;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     .Val--heading{
